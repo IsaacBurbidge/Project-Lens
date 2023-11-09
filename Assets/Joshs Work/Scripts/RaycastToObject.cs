@@ -23,9 +23,7 @@ public class RaycastToObject : MonoBehaviour {
     }
 
     void Update() {
-        //Mouse.current.leftButton.isPressed;
-            //ShootRayCast(hit);
-            //CheckObjectsTag();
+
     }
 
     public void OnInteract() {
@@ -36,9 +34,9 @@ public class RaycastToObject : MonoBehaviour {
     // Casts a Ray at the Mouses Position on Screen
     private void ShootRayCast(RaycastHit hit) {
         // Assigns the ray to the crosshair position on the screen [Center of screen]
-        Ray ray = Camera.main.ScreenPointToRay(new Vector2(Screen.currentResolution.width / 2, Screen.currentResolution.height / 2));
+        Ray ray = Camera.main.ScreenPointToRay(new Vector2(Screen.currentResolution.width / 2, Screen.currentResolution.height / 2)); // ACTUALLY GET MOUSE POSITION IN CENTER!
         // Checks if the ray has hit an object in the scene.
-        if (Physics.Raycast(ray, out hit)) {
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity)) {
             // Displays a gizmo on screen of the ray (Only in the Scene Window)
             Debug.DrawLine(ray.origin, hit.point, Color.red, 1f); // Ray gizmo remains on screen for 1 second inside the scene window
             CheckObjectsTag(hit);
