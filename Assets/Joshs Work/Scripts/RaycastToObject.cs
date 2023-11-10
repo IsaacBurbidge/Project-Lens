@@ -53,8 +53,8 @@ public class RaycastToObject : MonoBehaviour {
             hit.transform.gameObject.tag = "Reverse Lens";
             // Changes Color of Object Material back to Default Material
             hit.transform.gameObject.GetComponent<MeshRenderer>().material = defaultMat;
-        } // Checks that the Object is not already inside the reversibleObjectsList and that it doesn't contain the 'Level' tag
-        else if (reversibleObjectsList.Contains(hit.transform.gameObject) == false && hit.transform.CompareTag("Level") == false) {
+        } // Checks that the Object is not already inside the reversibleObjectsList and that it does contain the 'Reverse Lens' tag
+        else if (reversibleObjectsList.Contains(hit.transform.gameObject) == false && hit.transform.CompareTag("Reverse Lens") == true) {
             // Check if the List has reached max capacity
             if (reversibleObjectsList.Count == maxSizeOfList) {
                 // Display Error Message: Must remove an object from being reversible | Max is only 3
