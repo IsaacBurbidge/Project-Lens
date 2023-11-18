@@ -3,16 +3,41 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class RevealLens : Lens {
+	MeshRenderer Mesh;
+	Rigidbody Rigidbody;
+	Collider Collider;
+
 	private void Start() {
 		VisibleLens = LensList.REVEAL;
-		GetComponent<MeshRenderer>().enabled = false;
+		Mesh = GetComponent<MeshRenderer>();
+		Rigidbody = GetComponent<Rigidbody>();
+		Collider = GetComponent<Collider>();
+		Mesh.enabled = false;
+		if (Collider != null) {
+			Collider.enabled = false;
+		}
+		if (Rigidbody != null) {
+			Rigidbody.isKinematic = true;
+		}
 	}
 
 	public override void ActivateLens() {
-		GetComponent<MeshRenderer>().enabled = true;
+		Mesh.enabled = true;
+		if (Collider != null) { 
+			Collider.enabled = true;
+		}
+		if (Rigidbody != null) {
+			Rigidbody.isKinematic = false;
+		}
 	}
 
 	public override void DeactivateLens() {
-		GetComponent<MeshRenderer>().enabled = false;
+		Mesh.enabled = false;
+		if (Collider != null) {
+			Collider.enabled = false;
+		}
+		if (Rigidbody != null) {
+			Rigidbody.isKinematic = true;
+		}
 	}
 }
