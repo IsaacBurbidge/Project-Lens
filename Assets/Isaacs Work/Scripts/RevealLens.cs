@@ -17,7 +17,7 @@ public class RevealLens : Lens {
 			Collider.enabled = false;
 		}
 		if (Rigidbody != null) {
-			Rigidbody.isKinematic = true;
+			Rigidbody.Sleep();
 		}
 	}
 
@@ -27,7 +27,7 @@ public class RevealLens : Lens {
 			Collider.enabled = true;
 		}
 		if (Rigidbody != null) {
-			Rigidbody.isKinematic = false;
+			Rigidbody.WakeUp();
 		}
 	}
 
@@ -37,7 +37,7 @@ public class RevealLens : Lens {
 			Collider.enabled = false;
 		}
 		if (Rigidbody != null) {
-			Rigidbody.isKinematic = true;
+			Rigidbody.Sleep();
 		}
 	}
 }
