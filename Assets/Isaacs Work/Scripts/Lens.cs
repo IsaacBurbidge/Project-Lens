@@ -4,8 +4,10 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class Lens : MonoBehaviour {
+	//The lens that this object is visible/editiable under
 	public LensList VisibleLens;
 
+	//List of lens types
 	public enum LensList {
 		NONE = -1,
 		REVEAL,
@@ -13,6 +15,7 @@ public class Lens : MonoBehaviour {
 		REALITY
 	}
 
+	//Functionallity declared in child classes
 	public virtual void ActivateLens() {
 
 	}

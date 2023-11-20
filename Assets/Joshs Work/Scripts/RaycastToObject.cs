@@ -53,7 +53,13 @@ public class RaycastToObject : MonoBehaviour {
             hit.transform.gameObject.tag = "Reverse Lens";
             // Changes Color of Object Material back to Default Material
             hit.transform.gameObject.GetComponent<MeshRenderer>().material = defaultMat;
-        } // Checks that the Object is not already inside the reversibleObjectsList and that it does contain the 'Reverse Lens' tag
+            
+
+			if (GetComponent<SwapLens>() != null && GetComponent<SwapLens>().CurrentLens == Lens.LensList.REVERSE) {
+				hit.transform.GetComponent<ReverseLens>().DeactivateLens();
+			}
+
+		} // Checks that the Object is not already inside the reversibleObjectsList and that it does contain the 'Reverse Lens' tag
         else if (reversibleObjectsList.Contains(hit.transform.gameObject) == false && hit.transform.CompareTag("Reverse Lens") == true) {
             // Check if the List has reached max capacity
             if (reversibleObjectsList.Count == maxSizeOfList) {
@@ -68,6 +74,12 @@ public class RaycastToObject : MonoBehaviour {
                 hit.transform.gameObject.tag = "Reverse Object";
                 // Changes Color of Object Material to Reversible Material
                 hit.transform.gameObject.GetComponent<MeshRenderer>().material = reversibleMat;
+
+
+                if (GetComponent<SwapLens>() != null && GetComponent<SwapLens>().CurrentLens == Lens.LensList.REVERSE) {
+                    hit.transform.GetComponent<ReverseLens>().ActivateLens();
+                }
+
             }
         }
     }
