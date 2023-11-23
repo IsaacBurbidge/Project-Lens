@@ -29,7 +29,7 @@ public class RaycastToObject : MonoBehaviour {
     // Casts a Ray at the Mouses Position on Screen
     private void ShootRayCast(RaycastHit hit) {
         // Assigns the ray to the crosshair position on the screen [Center of screen]
-        Ray ray = Camera.main.ScreenPointToRay(new Vector2(Screen.currentResolution.width / 2, Screen.currentResolution.height / 2)); // ACTUALLY GET MOUSE POSITION IN CENTER!
+        Ray ray = Camera.main.ScreenPointToRay(new Vector2(Mouse.current.position.x.ReadValue(), Mouse.current.position.y.ReadValue()));
         // Checks if the ray has hit an object in the scene.
         if (Physics.Raycast(ray, out hit, Mathf.Infinity)) {
             // Displays a gizmo on screen of the ray (Only in the Scene Window)
