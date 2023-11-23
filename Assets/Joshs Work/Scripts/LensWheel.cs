@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.InputSystem;
+using static StateManager;
 
 public class LensWheel : MonoBehaviour {
     [SerializeField]
@@ -19,7 +20,7 @@ public class LensWheel : MonoBehaviour {
             isLensWheelVisible = true;
             Time.timeScale = 0.15f;
             Cursor.lockState = CursorLockMode.Confined;
-            StateManager.currentState = "LensWheel";
+            currentState = PlayerStates.LensWheel;
         }
         // Toggle Off
         else if (isLensWheelVisible == true) {
@@ -27,7 +28,7 @@ public class LensWheel : MonoBehaviour {
             isLensWheelVisible = false;
             Time.timeScale = 1.0f;
             Cursor.lockState = CursorLockMode.Locked;
-            StateManager.currentState = "Gameplay";
+            currentState = PlayerStates.Gameplay;
         }
     }
     // Sets the Current Lens Enum - Picks the Lens before the one chosen due to the cycle feature in SwitchLens.cs script

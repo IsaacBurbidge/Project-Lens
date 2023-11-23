@@ -3,14 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class StateManager : MonoBehaviour {
-    public static string currentState = "Gameplay";
-    // Start is called before the first frame update
-    void Start() {
-        
+    public enum PlayerStates {
+        NULL = -1,
+        Gameplay,
+        LensWheel
     }
 
-    // Update is called once per frame
-    void Update() {
-        
-    }
+    public static PlayerStates currentState = PlayerStates.Gameplay;
 }
