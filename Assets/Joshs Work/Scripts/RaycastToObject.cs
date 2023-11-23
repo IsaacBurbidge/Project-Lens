@@ -12,6 +12,8 @@ public class RaycastToObject : MonoBehaviour {
     public List<GameObject> reversibleObjectsList;
     private RaycastHit hit;
     private int maxSizeOfList = 3;
+    [SerializeField]
+    private SwapLens swapLensScript;
 
     [SerializeField]
     private Material defaultMat;
