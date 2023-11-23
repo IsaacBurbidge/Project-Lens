@@ -11,23 +11,14 @@ public class LensWheel : MonoBehaviour {
     private GameObject lensWheelUI;
     public bool isLensWheelVisible = false;
 
-    // Start is called before the first frame update
-    void Start() {
-
-    }
-
-    // Update is called once per frame
-    void Update() {
-
-    }
-    // Press Tab to toggle Lens Wheel On/Off
+    // Press 'F' key to toggle Lens Wheel On/Off
     public void OnToggleLensWheel() {
         // Toggle On
         if(isLensWheelVisible == false) {
             lensWheelUI.SetActive(true);
             isLensWheelVisible = true;
             Time.timeScale = 0.15f;
-            Cursor.lockState = CursorLockMode.None;
+            Cursor.lockState = CursorLockMode.Confined;
             StateManager.currentState = "LensWheel";
         }
         // Toggle Off
