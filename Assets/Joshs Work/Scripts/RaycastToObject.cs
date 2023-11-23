@@ -60,7 +60,7 @@ public class RaycastToObject : MonoBehaviour {
 
 			if (GetComponent<SwapLens>() != null && GetComponent<SwapLens>().CurrentLens == Lens.LensList.REVERSE) {
 				hit.transform.GetComponent<ReverseLens>().DeactivateLens();
-			}
+            }
 
 		} // Checks that the Object is not already inside the reversibleObjectsList and that it does contain the 'Reverse Lens' tag
         else if (reversibleObjectsList.Contains(hit.transform.gameObject) == false && hit.transform.CompareTag("Reverse Lens") == true) {
