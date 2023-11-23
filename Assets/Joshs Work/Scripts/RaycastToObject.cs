@@ -27,8 +27,9 @@ public class RaycastToObject : MonoBehaviour {
     }
 
     public void OnInteract() {
-        Debug.Log("Clicked LMB Down");
-        ShootRayCast(hit);
+        if(StateManager.currentState == "Gameplay") {
+            ShootRayCast(hit);
+        }
     }
 
     // Casts a Ray at the Mouses Position on Screen

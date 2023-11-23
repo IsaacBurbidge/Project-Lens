@@ -58,6 +58,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "ToggleLensWheel",
+                    "type": "Button",
+                    "id": "a3545ec7-272d-400c-95c5-c2beb1a9adea",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -258,8 +267,25 @@
                     "action": "Interact",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2da09e40-c109-4a1f-8e04-e06cb1c037a6",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyboardMouse",
+                    "action": "ToggleLensWheel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "HUD",
+            "id": "616e908a-f1b4-4de1-a015-b6a2971ea439",
+            "actions": [],
+            "bindings": []
         }
     ],
     "controlSchemes": [
