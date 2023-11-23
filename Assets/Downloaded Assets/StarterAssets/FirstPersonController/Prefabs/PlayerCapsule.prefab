@@ -391,6 +391,7 @@ GameObject:
   - component: {fileID: 8616685848737228376}
   - component: {fileID: 3053794215637317000}
   - component: {fileID: 522564563092812312}
+  - component: {fileID: 2353165276742171541}
   m_Layer: 8
   m_Name: PlayerCapsule
   m_TagString: Player
@@ -632,8 +633,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reversibleObjectsList: []
+  swapLensScript: {fileID: 3053794215637317000}
   defaultMat: {fileID: 2100000, guid: 8f7e1a622c02b8c4684a067d5057e8c3, type: 2}
   reversibleMat: {fileID: 2100000, guid: bd191580134649a4b8c0bb7da2f17fe7, type: 2}
+--- !u!114 &2353165276742171541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8616685848737228372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17e38bea1af8dd3459a5f4ac08c44695, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  swapLensScript: {fileID: 3053794215637317000}
+  lensWheelUI: {fileID: 0}
+  isLensWheelVisible: 0
 --- !u!1001 &699527610704652925
 PrefabInstance:
   m_ObjectHideFlags: 0
