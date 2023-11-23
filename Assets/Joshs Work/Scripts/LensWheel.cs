@@ -7,7 +7,7 @@ using static StateManager;
 
 public class LensWheel : MonoBehaviour {
     [SerializeField]
-    private SwapLens swapLensScript;
+    private SwitchLens swapLensScript;
     [SerializeField]
     private GameObject lensWheelUI;
     public bool isLensWheelVisible = false;

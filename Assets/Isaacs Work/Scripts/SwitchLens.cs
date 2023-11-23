@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class SwapLens : MonoBehaviour
+public class SwitchLens : MonoBehaviour
 {
 	public Lens.LensList CurrentLens = Lens.LensList.NONE;
 	Lens[] LensItems;

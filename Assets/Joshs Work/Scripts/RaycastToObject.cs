@@ -13,23 +13,15 @@ public class RaycastToObject : MonoBehaviour {
     private RaycastHit hit;
     private int maxSizeOfList = 3;
     [SerializeField]
-    private SwapLens swapLensScript;
+    private SwitchLens swapLensScript;
 
     [SerializeField]
     private Material defaultMat;
     [SerializeField]
     private Material reversibleMat;
 
-    void Start() {
-
-    }
-
-    void Update() {
-
-    }
-
     public void OnInteract() {
-        if(StateManager.currentState == "Gameplay") {
+        if(StateManager.currentState == StateManager.PlayerStates.Gameplay) {
             ShootRayCast(hit);
         }
     }
@@ -58,7 +50,7 @@ public class RaycastToObject : MonoBehaviour {
             hit.transform.gameObject.GetComponent<MeshRenderer>().material = defaultMat;
             
 
-			if (GetComponent<SwapLens>() != null && GetComponent<SwapLens>().CurrentLens == Lens.LensList.REVERSE) {
+			if (GetComponent<SwitchLens>() != null && GetComponent<SwitchLens>().CurrentLens == Lens.LensList.REVERSE) {
 				hit.transform.GetComponent<ReverseLens>().DeactivateLens();
             }
 
@@ -79,7 +71,7 @@ public class RaycastToObject : MonoBehaviour {
                 hit.transform.gameObject.GetComponent<MeshRenderer>().material = reversibleMat;
 
 
-                if (GetComponent<SwapLens>() != null && GetComponent<SwapLens>().CurrentLens == Lens.LensList.REVERSE) {
+                if (GetComponent<SwitchLens>() != null && GetComponent<SwitchLens>().CurrentLens == Lens.LensList.REVERSE) {
                     hit.transform.GetComponent<ReverseLens>().ActivateLens();
                 }
 
