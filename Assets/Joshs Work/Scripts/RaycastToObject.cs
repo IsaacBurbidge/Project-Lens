@@ -70,11 +70,9 @@ public class RaycastToObject : MonoBehaviour {
                 // Changes Color of Object Material to Reversible Material
                 hit.transform.gameObject.GetComponent<MeshRenderer>().material = reversibleMat;
 
-
                 if (GetComponent<SwitchLens>() != null && GetComponent<SwitchLens>().CurrentLens == Lens.LensList.REVERSE) {
                     hit.transform.GetComponent<ReverseLens>().ActivateLens();
                 }
-
             }
         }
     }
