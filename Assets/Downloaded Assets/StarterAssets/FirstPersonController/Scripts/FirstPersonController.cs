@@ -88,6 +88,8 @@ namespace StarterAssets
 
 		private void Awake()
 		{
+			// Reset State back to default
+			StateManager.currentState = StateManager.PlayerStates.Gameplay;
 			// get a reference to our main camera
 			if (_mainCamera == null)
 			{
