@@ -3980,6 +3980,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1006422998}
+        m_TargetAssemblyTypeName: RevealTutorialFix, Assembly-CSharp
+        m_MethodName: LensSwitch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1844500666}
+        m_TargetAssemblyTypeName: RevealTutorialFix, Assembly-CSharp
+        m_MethodName: LensSwitch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &678694013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4169,7 +4193,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &690479548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4177,7 +4201,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 690479547}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
@@ -4197,7 +4221,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 690479547}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
@@ -5582,6 +5606,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1006422997}
+  - component: {fileID: 1006422998}
   m_Layer: 0
   m_Name: Stairs
   m_TagString: Untagged
@@ -5612,6 +5637,19 @@ Transform:
   - {fileID: 1050302113}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1006422998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006422996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47e093b263bab5f4bab4bb74042d311a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  swapLensScript: {fileID: 1510956403}
 --- !u!1 &1033174577
 GameObject:
   m_ObjectHideFlags: 0
@@ -8309,6 +8347,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1006422998}
+        m_TargetAssemblyTypeName: RevealTutorialFix, Assembly-CSharp
+        m_MethodName: LensSwitch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1844500666}
+        m_TargetAssemblyTypeName: RevealTutorialFix, Assembly-CSharp
+        m_MethodName: LensSwitch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1447224053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8823,6 +8885,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1307963825}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &1510956403 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3053794215637317000, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+  m_PrefabInstance: {fileID: 141375709}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ff1b35a21ad33a4bb86ece86db3d5d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1552392295
 GameObject:
   m_ObjectHideFlags: 0
@@ -9103,6 +9176,30 @@ MonoBehaviour:
       - m_Target: {fileID: 141375710}
         m_TargetAssemblyTypeName: LensWheel, Assembly-CSharp
         m_MethodName: ClickRevealLensBtn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1006422998}
+        m_TargetAssemblyTypeName: RevealTutorialFix, Assembly-CSharp
+        m_MethodName: LensSwitch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1844500666}
+        m_TargetAssemblyTypeName: RevealTutorialFix, Assembly-CSharp
+        m_MethodName: LensSwitch
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9715,6 +9812,30 @@ MonoBehaviour:
       - m_Target: {fileID: 141375710}
         m_TargetAssemblyTypeName: LensWheel, Assembly-CSharp
         m_MethodName: ClickReverseLensBtn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1006422998}
+        m_TargetAssemblyTypeName: RevealTutorialFix, Assembly-CSharp
+        m_MethodName: LensSwitch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1844500666}
+        m_TargetAssemblyTypeName: RevealTutorialFix, Assembly-CSharp
+        m_MethodName: LensSwitch
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10580,6 +10701,7 @@ GameObject:
   - component: {fileID: 1844500661}
   - component: {fileID: 1844500660}
   - component: {fileID: 1844500665}
+  - component: {fileID: 1844500666}
   m_Layer: 0
   m_Name: FallSphere
   m_TagString: Reveal Lens
@@ -10713,6 +10835,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VisibleLens: 0
+--- !u!114 &1844500666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844500659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47e093b263bab5f4bab4bb74042d311a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  swapLensScript: {fileID: 1510956403}
 --- !u!1001 &1848976956
 PrefabInstance:
   m_ObjectHideFlags: 0
