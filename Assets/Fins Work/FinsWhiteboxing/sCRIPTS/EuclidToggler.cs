@@ -12,6 +12,7 @@ public class EuclidToggler : Eventy
 
     public void EuclidToggle()
     {
+        if(NonEuclid.inRoom == false) { 
         switch (swapLensScript.CurrentLens) {
             case Lens.LensList.NONE:
                 roomA.SetActive(true);
@@ -29,6 +30,8 @@ public class EuclidToggler : Eventy
                 roomA.SetActive(false);
                 roomB.SetActive(true);
                 break;
+            }
+
         }
         //roomA.SetActive(!roomA.activeSelf);
         //roomB.SetActive(!roomB.activeSelf);

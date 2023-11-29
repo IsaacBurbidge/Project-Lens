@@ -6,11 +6,14 @@ using UnityEngine;
 public class NonEuclid : MonoBehaviour
 {
     [SerializeField] private Eventy eventscript;
+
+    public static bool inRoom = false;
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player"))
         {
             eventscript.isActive = false;
+            inRoom = true;
         }
     }
     private void OnTriggerExit(Collider other)
@@ -18,6 +21,7 @@ public class NonEuclid : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             eventscript.isActive = true;
+            inRoom = false;
         }
     }
 }
