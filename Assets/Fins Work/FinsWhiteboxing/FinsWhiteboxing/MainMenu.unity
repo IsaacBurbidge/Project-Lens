@@ -128,6 +128,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2312791764312219282, guid: ce466c5c5a0838d4cb83a6ad53cfb4ae, type: 3}
   m_PrefabInstance: {fileID: 1009917614825041375}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &477073974 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6877797966874019555, guid: 654a87419deeb07469ad427ead6505b9, type: 3}
+  m_PrefabInstance: {fileID: 4691115416391888951}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &748264952
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,9 +621,25 @@ PrefabInstance:
     m_TransformParent: {fileID: 1209744097}
     m_Modifications:
     - target: {fileID: 1693133956528140223, guid: ce466c5c5a0838d4cb83a6ad53cfb4ae, type: 3}
+      propertyPath: levelAnimator
+      value: 
+      objectReference: {fileID: 477073974}
+    - target: {fileID: 1693133956528140223, guid: ce466c5c5a0838d4cb83a6ad53cfb4ae, type: 3}
       propertyPath: levelSelector
       value: 
       objectReference: {fileID: 1209744098}
+    - target: {fileID: 1693133956528140223, guid: ce466c5c5a0838d4cb83a6ad53cfb4ae, type: 3}
+      propertyPath: transitionTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1693133956528140223, guid: ce466c5c5a0838d4cb83a6ad53cfb4ae, type: 3}
+      propertyPath: animatorParamName
+      value: Triggered
+      objectReference: {fileID: 0}
+    - target: {fileID: 1693133956528140223, guid: ce466c5c5a0838d4cb83a6ad53cfb4ae, type: 3}
+      propertyPath: hasLevelTransition
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2312791764312219282, guid: ce466c5c5a0838d4cb83a6ad53cfb4ae, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -717,9 +738,25 @@ PrefabInstance:
     m_TransformParent: {fileID: 1209744097}
     m_Modifications:
     - target: {fileID: 389283430462264122, guid: 010cd5efd5d30784badcef41ecbf8379, type: 3}
+      propertyPath: levelAnimator
+      value: 
+      objectReference: {fileID: 477073974}
+    - target: {fileID: 389283430462264122, guid: 010cd5efd5d30784badcef41ecbf8379, type: 3}
       propertyPath: levelSelector
       value: 
       objectReference: {fileID: 1209744098}
+    - target: {fileID: 389283430462264122, guid: 010cd5efd5d30784badcef41ecbf8379, type: 3}
+      propertyPath: transitionTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 389283430462264122, guid: 010cd5efd5d30784badcef41ecbf8379, type: 3}
+      propertyPath: animatorParamName
+      value: Triggered
+      objectReference: {fileID: 0}
+    - target: {fileID: 389283430462264122, guid: 010cd5efd5d30784badcef41ecbf8379, type: 3}
+      propertyPath: hasLevelTransition
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5890630231254464500, guid: 010cd5efd5d30784badcef41ecbf8379, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -809,6 +846,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 010cd5efd5d30784badcef41ecbf8379, type: 3}
+--- !u!1001 &4691115416391888951
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 578202922019835201, guid: 654a87419deeb07469ad427ead6505b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578202922019835201, guid: 654a87419deeb07469ad427ead6505b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578202922019835201, guid: 654a87419deeb07469ad427ead6505b9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578202922019835201, guid: 654a87419deeb07469ad427ead6505b9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 578202922019835201, guid: 654a87419deeb07469ad427ead6505b9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578202922019835201, guid: 654a87419deeb07469ad427ead6505b9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578202922019835201, guid: 654a87419deeb07469ad427ead6505b9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578202922019835201, guid: 654a87419deeb07469ad427ead6505b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578202922019835201, guid: 654a87419deeb07469ad427ead6505b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578202922019835201, guid: 654a87419deeb07469ad427ead6505b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4033309135587538234, guid: 654a87419deeb07469ad427ead6505b9, type: 3}
+      propertyPath: m_Name
+      value: LevelLoader
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 654a87419deeb07469ad427ead6505b9, type: 3}
 --- !u!1001 &9223103485834787123
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -902,9 +996,25 @@ PrefabInstance:
       value: Button (2)
       objectReference: {fileID: 0}
     - target: {fileID: 4267109515254409563, guid: 4c29e34d2792c7644b213053701a1bfd, type: 3}
+      propertyPath: levelAnimator
+      value: 
+      objectReference: {fileID: 477073974}
+    - target: {fileID: 4267109515254409563, guid: 4c29e34d2792c7644b213053701a1bfd, type: 3}
       propertyPath: levelSelector
       value: 
       objectReference: {fileID: 1209744098}
+    - target: {fileID: 4267109515254409563, guid: 4c29e34d2792c7644b213053701a1bfd, type: 3}
+      propertyPath: transitionTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4267109515254409563, guid: 4c29e34d2792c7644b213053701a1bfd, type: 3}
+      propertyPath: animatorParamName
+      value: Triggered
+      objectReference: {fileID: 0}
+    - target: {fileID: 4267109515254409563, guid: 4c29e34d2792c7644b213053701a1bfd, type: 3}
+      propertyPath: hasLevelTransition
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -914,6 +1024,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 4691115416391888951}
   - {fileID: 922073996}
   - {fileID: 1194624444}
   - {fileID: 1209744097}
