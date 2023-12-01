@@ -28,5 +28,6 @@ public class LoaderButton : MonoBehaviour
         }
         levelSelector.levelToLoad = levelName;
         levelSelector.OpenNewScene();
+        Time.timeScale = 1f;
     }
 }

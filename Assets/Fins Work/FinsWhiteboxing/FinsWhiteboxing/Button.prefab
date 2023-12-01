@@ -148,6 +148,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelName: RevealPuzzle01
   levelSelector: {fileID: 0}
+  levelAnimator: {fileID: 0}
+  transitionTime: 0.5
+  animatorParamName: 
+  hasLevelTransition: 0
 --- !u!1 &5523301444677650179
 GameObject:
   m_ObjectHideFlags: 0

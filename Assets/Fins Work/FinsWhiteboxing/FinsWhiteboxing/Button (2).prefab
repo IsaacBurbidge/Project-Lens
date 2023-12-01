@@ -148,6 +148,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelName: RealityPuzzleTut
   levelSelector: {fileID: 0}
+  levelAnimator: {fileID: 0}
+  transitionTime: 0.5
+  animatorParamName: 
+  hasLevelTransition: 0
 --- !u!1 &5059969946291041265
 GameObject:
   m_ObjectHideFlags: 0

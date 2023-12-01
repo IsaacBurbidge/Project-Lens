@@ -3617,6 +3617,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 636221117}
   m_CullTransparentMesh: 1
+--- !u!1001 &640958139
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 578202922019835201, guid: 654a87419deeb07469ad427ead6505b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578202922019835201, guid: 654a87419deeb07469ad427ead6505b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578202922019835201, guid: 654a87419deeb07469ad427ead6505b9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578202922019835201, guid: 654a87419deeb07469ad427ead6505b9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 578202922019835201, guid: 654a87419deeb07469ad427ead6505b9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578202922019835201, guid: 654a87419deeb07469ad427ead6505b9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578202922019835201, guid: 654a87419deeb07469ad427ead6505b9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578202922019835201, guid: 654a87419deeb07469ad427ead6505b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578202922019835201, guid: 654a87419deeb07469ad427ead6505b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578202922019835201, guid: 654a87419deeb07469ad427ead6505b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4033309135587538234, guid: 654a87419deeb07469ad427ead6505b9, type: 3}
+      propertyPath: m_Name
+      value: LevelLoader
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 654a87419deeb07469ad427ead6505b9, type: 3}
+--- !u!95 &640958140 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6877797966874019555, guid: 654a87419deeb07469ad427ead6505b9, type: 3}
+  m_PrefabInstance: {fileID: 640958139}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &664365336
 GameObject:
   m_ObjectHideFlags: 0
@@ -8980,9 +9042,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 1598128732}
     m_Modifications:
     - target: {fileID: 389283430462264122, guid: 010cd5efd5d30784badcef41ecbf8379, type: 3}
+      propertyPath: levelAnimator
+      value: 
+      objectReference: {fileID: 640958140}
+    - target: {fileID: 389283430462264122, guid: 010cd5efd5d30784badcef41ecbf8379, type: 3}
       propertyPath: levelSelector
       value: 
       objectReference: {fileID: 1598128733}
+    - target: {fileID: 389283430462264122, guid: 010cd5efd5d30784badcef41ecbf8379, type: 3}
+      propertyPath: animatorParamName
+      value: Triggered
+      objectReference: {fileID: 0}
+    - target: {fileID: 389283430462264122, guid: 010cd5efd5d30784badcef41ecbf8379, type: 3}
+      propertyPath: hasLevelTransition
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5890630231254464500, guid: 010cd5efd5d30784badcef41ecbf8379, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -11257,9 +11331,21 @@ PrefabInstance:
       value: Button (2)
       objectReference: {fileID: 0}
     - target: {fileID: 4267109515254409563, guid: 4c29e34d2792c7644b213053701a1bfd, type: 3}
+      propertyPath: levelAnimator
+      value: 
+      objectReference: {fileID: 640958140}
+    - target: {fileID: 4267109515254409563, guid: 4c29e34d2792c7644b213053701a1bfd, type: 3}
       propertyPath: levelSelector
       value: 
       objectReference: {fileID: 1598128733}
+    - target: {fileID: 4267109515254409563, guid: 4c29e34d2792c7644b213053701a1bfd, type: 3}
+      propertyPath: animatorParamName
+      value: Triggered
+      objectReference: {fileID: 0}
+    - target: {fileID: 4267109515254409563, guid: 4c29e34d2792c7644b213053701a1bfd, type: 3}
+      propertyPath: hasLevelTransition
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12663,3 +12749,4 @@ SceneRoots:
   - {fileID: 141375709}
   - {fileID: 1400622376}
   - {fileID: 1598128732}
+  - {fileID: 640958139}
