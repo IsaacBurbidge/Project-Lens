@@ -45,4 +45,36 @@ public class SwitchLens : MonoBehaviour{
 			}
 		}
 	}
+
+	public void LensWheelSwap(Lens.LensList NextLens) {
+		Lens.LensList PreviousLens = CurrentLens;
+		CurrentLens = NextLens;
+
+        switch (CurrentLens) {
+            case Lens.LensList.NONE: {
+                CurrentLensText.text = "No Lens";
+                break;
+            }
+            case Lens.LensList.REVEAL: {
+                CurrentLensText.text = "Reveal Lens";
+                break;
+            }
+            case Lens.LensList.REVERSE: {
+                CurrentLensText.text = "Reverse Lens";
+                break;
+            }
+            case Lens.LensList.REALITY: {
+                CurrentLensText.text = "Reality Lens";
+                break;
+            }
+        }
+
+        for (int i = 0; i < LensItems.Length; i++) {
+            if (CurrentLens == LensItems[i].VisibleLens) {
+                LensItems[i].ActivateLens();
+            } else if ((int)PreviousLens == (int)LensItems[i].VisibleLens) {
+                LensItems[i].DeactivateLens();
+            }
+        }
+    }
 }
