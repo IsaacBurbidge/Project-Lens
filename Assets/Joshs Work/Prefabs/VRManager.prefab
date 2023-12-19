@@ -1466,9 +1466,9 @@ CharacterController:
   m_Height: 1
   m_Radius: 0.1
   m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
+  m_StepOffset: 0.25
+  m_SkinWidth: 0.02
+  m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!114 &4619485322449646169
 MonoBehaviour:
@@ -1497,7 +1497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdd704dc1bbe304fb2a4ee36cae7b7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpHeight: 3
+  jumpHeight: 3.2
   gravity: -15
   jumpButton:
     m_UseReference: 1
@@ -1512,13 +1512,14 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: -5147874564222201205, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   characterController: {fileID: 8897520695150424228}
-  jump: 0
-  grounded: 1
+  isGrounded: 1
   groundedOffset: 0
   groundedRadius: 0.1
   groundLayers:
     serializedVersion: 2
     m_Bits: 64
+  jumpTimeout: 0.1
+  fallTimeout: 0.15
 --- !u!114 &2313024836916092913
 MonoBehaviour:
   m_ObjectHideFlags: 0
