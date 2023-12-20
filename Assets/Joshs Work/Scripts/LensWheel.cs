@@ -1,52 +1,63 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 using UnityEngine.InputSystem;
-using static StateManager;
 
 public class LensWheel : MonoBehaviour {
+    // Player Input
+    [SerializeField]
+    private InputActionProperty toggleLensWheelButton;
+
+    // Lens Wheel Variables
+    private bool isLensWheelVisible = false;
     [SerializeField]
     private SwitchLens swapLensScript;
     [SerializeField]
     private GameObject lensWheelUI;
-    public bool isLensWheelVisible = false;
 
-    // Press 'F' key to toggle Lens Wheel On/Off
-    public void OnToggleLensWheel() {
+    void Start() {
+        // Hide Lens Wheel on Start
+        isLensWheelVisible = false;
+        lensWheelUI.SetActive(false);
+    }
+
+    void Update() {
+        if (toggleLensWheelButton.action.WasPressedThisFrame() == true) {
+            ToggleLensWheel();
+        }
+    }
+
+    // Press X Button on Left XR Controller to toggle Lens Wheel On/Off
+    private void ToggleLensWheel() {
         // Toggle On
-        if(isLensWheelVisible == false) {
+        if (isLensWheelVisible == false) {
+            // Show Lens Wheel UI
             lensWheelUI.SetActive(true);
             isLensWheelVisible = true;
+            // Slow down time
             Time.timeScale = 0.15f;
-            Cursor.lockState = CursorLockMode.Confined;
-            currentState = PlayerStates.LensWheel;
         }
         // Toggle Off
         else if (isLensWheelVisible == true) {
+            // Hide Lens Wheel UI
             lensWheelUI.SetActive(false);
             isLensWheelVisible = false;
+            // Revert to normal time
             Time.timeScale = 1.0f;
-            Cursor.lockState = CursorLockMode.Locked;
-            currentState = PlayerStates.Gameplay;
         }
     }
-    // Sets the Current Lens Enum - Picks the Lens before the one chosen due to the cycle feature in SwitchLens.cs script
-    // Calls the OnSwapLens Function to display the correct Current Lens Text
+
+    // Sets the Current Lens Enum to the chosen Lens [REVEAL | REVERSE | REALITY | NO LENS]
     public void ClickRevealLensBtn() {
-        swapLensScript.CurrentLens = Lens.LensList.NONE;
-        swapLensScript.OnSwapLens();
+        swapLensScript.LensWheelSwap(Lens.LensList.REVEAL);
     }
     public void ClickReverseLensBtn() {
-        swapLensScript.CurrentLens = Lens.LensList.REVEAL;
-        swapLensScript.OnSwapLens();
+        swapLensScript.LensWheelSwap(Lens.LensList.REVERSE);
     }
     public void ClickRealityLensBtn() {
-        swapLensScript.CurrentLens = Lens.LensList.REVERSE;
-        swapLensScript.OnSwapLens();
+        swapLensScript.LensWheelSwap(Lens.LensList.REALITY);
     }
     public void ClickNoLensBtn() {
-        swapLensScript.CurrentLens = Lens.LensList.REALITY;
-        swapLensScript.OnSwapLens();
+        swapLensScript.LensWheelSwap(Lens.LensList.NONE);
     }
 }

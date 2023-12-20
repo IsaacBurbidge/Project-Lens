@@ -55,7 +55,7 @@ public class PlayerJump : MonoBehaviour {
 		isGrounded = Physics.CheckSphere(spherePosition, groundedRadius, groundLayers, QueryTriggerInteraction.Ignore);
 	}
 
-	public void PerformJump() {
+	private void PerformJump() {
 		if (isGrounded) {
 			fallTimeoutDelta = fallTimeout;
 
@@ -64,11 +64,8 @@ public class PlayerJump : MonoBehaviour {
 				verticalVelocity.y = -1f;
 			}
 
-			// Jump
-			if (jumpButton.action.WasPressedThisFrame() == true) {
-				// Calculates how much velocity is needed to reach desired height
-				verticalVelocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
-			}
+			// Calculates how much velocity is needed to reach desired height
+			verticalVelocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
 
 			// Jump timeout - adds buffer time between jumps
 			if (jumpTimeoutDelta >= 0.0f) {
@@ -85,7 +82,7 @@ public class PlayerJump : MonoBehaviour {
 			}
 		}
 	}
-	public void ApplyJump() {
+	private void ApplyJump() {
 		// Apply gravity over time if under terminalVeclocity (multiply by delta time twice to linearly speed up over time)
 		if (verticalVelocity.y < terminalVelocity) {
 			verticalVelocity.y += gravity * Time.deltaTime;
