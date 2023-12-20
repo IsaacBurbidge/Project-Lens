@@ -5,6 +5,7 @@ using UnityEngine;
 public class StateManager : MonoBehaviour {
     public enum PlayerStates {
         NULL = -1,
+        MainMenu,
         Gameplay,
         LensWheel
     }

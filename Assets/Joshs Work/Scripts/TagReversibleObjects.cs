@@ -11,27 +11,32 @@ public class TagReversibleObjects : MonoBehaviour {
     [SerializeField]
     private InputActionProperty reversibleTagRightButton;
 
+    // Player Hand Objects
     [SerializeField]
     private GameObject leftHandObject;
     [SerializeField]
     private GameObject rightHandObject;
 
-    public List<GameObject> reversibleObjectsList;
-    private RaycastHit hit;
-    private int maxSizeOfList = 3;
-    [SerializeField]
-    private SwitchLens swapLensScript;
-
-    public int objectToRemoveIndex;
+    //  Materials
     [SerializeField]
     private List<Material> previousMatList;
     [SerializeField]
     private Material reversibleMat;
 
+    // Ray Interactor Script References
     [SerializeField]
     private XRRayInteractor leftHandRayInteractor;
     [SerializeField]
     private XRRayInteractor rightHandRayInteractor;
+
+    // Misc
+    public List<GameObject> reversibleObjectsList;
+    public int objectToRemoveIndex;
+    private RaycastHit hit;
+    private int maxSizeOfList = 3;
+    [SerializeField]
+    private SwitchLens swapLensScript;
+   
 
     // Start is called before the first frame update
     void Start() {
@@ -40,15 +45,15 @@ public class TagReversibleObjects : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        if (reversibleTagLeftButton.action.WasPressedThisFrame() == true) {
-            GetLeftHandRayCastHit(hit);
-            CheckObjectsTag(hit);
-           // TagObject();
-        }
-        else if (reversibleTagRightButton.action.WasPressedThisFrame() == true) {
-            GetRightHandRayCastHit(hit);
-            CheckObjectsTag(hit);
-            //TagObject();
+        if (StateManager.currentState == StateManager.PlayerStates.Gameplay){
+            if (reversibleTagLeftButton.action.WasPressedThisFrame() == true) {
+                GetLeftHandRayCastHit(hit);
+                CheckObjectsTag(hit);
+            }
+            else if (reversibleTagRightButton.action.WasPressedThisFrame() == true) {
+                GetRightHandRayCastHit(hit);
+                CheckObjectsTag(hit);
+            }
         }
     }
 

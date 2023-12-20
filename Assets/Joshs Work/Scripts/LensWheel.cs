@@ -36,6 +36,8 @@ public class LensWheel : MonoBehaviour {
             isLensWheelVisible = true;
             // Slow down time
             Time.timeScale = 0.15f;
+            // Change to LensWheel state to ensure that no objects can be tagged as reversible when interacting with the Lens Wheel UI
+            StateManager.currentState = StateManager.PlayerStates.LensWheel;
         }
         // Toggle Off
         else if (isLensWheelVisible == true) {
@@ -44,6 +46,8 @@ public class LensWheel : MonoBehaviour {
             isLensWheelVisible = false;
             // Revert to normal time
             Time.timeScale = 1.0f;
+            // Revert back to Gameplay state
+            StateManager.currentState = StateManager.PlayerStates.Gameplay;
         }
     }
 
