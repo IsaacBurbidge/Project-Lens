@@ -1719,11 +1719,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 163599394421669638, guid: 472e63d3f0e1ed34f9edc64447f58572, type: 3}
       propertyPath: m_Name
-      value: PopupPanel
+      value: LensWheel_Panel
       objectReference: {fileID: 0}
     - target: {fileID: 163599394421669638, guid: 472e63d3f0e1ed34f9edc64447f58572, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 185126623241324844, guid: 472e63d3f0e1ed34f9edc64447f58572, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1781,37 +1781,13 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3296847686841993312, guid: 472e63d3f0e1ed34f9edc64447f58572, type: 3}
-      propertyPath: m_Pivot.y
-      value: 7.34
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296847686841993312, guid: 472e63d3f0e1ed34f9edc64447f58572, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296847686841993312, guid: 472e63d3f0e1ed34f9edc64447f58572, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296847686841993312, guid: 472e63d3f0e1ed34f9edc64447f58572, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 240
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296847686841993312, guid: 472e63d3f0e1ed34f9edc64447f58572, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296847686841993312, guid: 472e63d3f0e1ed34f9edc64447f58572, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3466368342296638846, guid: 472e63d3f0e1ed34f9edc64447f58572, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3572642502775870831, guid: 472e63d3f0e1ed34f9edc64447f58572, type: 3}
       propertyPath: m_Name
-      value: VisiblePanel
+      value: ConstantHUD_Panel
       objectReference: {fileID: 0}
     - target: {fileID: 3592234432015686653, guid: 472e63d3f0e1ed34f9edc64447f58572, type: 3}
       propertyPath: m_Icon
@@ -1825,14 +1801,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: VRManager
       objectReference: {fileID: 0}
-    - target: {fileID: 3596972650403210814, guid: 472e63d3f0e1ed34f9edc64447f58572, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3841560334202260885, guid: 472e63d3f0e1ed34f9edc64447f58572, type: 3}
       propertyPath: lensWheelUI
       value: 
       objectReference: {fileID: 91569393}
+    - target: {fileID: 3841560334202260885, guid: 472e63d3f0e1ed34f9edc64447f58572, type: 3}
+      propertyPath: cycleLensWheelButton.m_Action.m_Name
+      value: Cycle Lens Wheel Button
+      objectReference: {fileID: 0}
     - target: {fileID: 4224773593972372186, guid: 472e63d3f0e1ed34f9edc64447f58572, type: 3}
       propertyPath: m_Name
       value: Right Direct Interactor
@@ -1842,20 +1818,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5018266881192295935, guid: 472e63d3f0e1ed34f9edc64447f58572, type: 3}
-      propertyPath: m_VerticalAlignment
-      value: 512
+      propertyPath: m_fontSizeBase
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 5018266881192295935, guid: 472e63d3f0e1ed34f9edc64447f58572, type: 3}
-      propertyPath: m_HorizontalAlignment
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5240756520132684612, guid: 472e63d3f0e1ed34f9edc64447f58572, type: 3}
-      propertyPath: m_RayInteractors.Array.data[2].m_Interactor
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5240756520132684612, guid: 472e63d3f0e1ed34f9edc64447f58572, type: 3}
-      propertyPath: m_RayInteractors.Array.data[3].m_Interactor
-      value: 
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8221546919419813362, guid: 472e63d3f0e1ed34f9edc64447f58572, type: 3}
       propertyPath: m_Name

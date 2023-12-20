@@ -53,19 +53,23 @@ public class SwitchLens : MonoBehaviour{
         switch (CurrentLens) {
             case Lens.LensList.NONE: {
                 CurrentLensText.text = "No Lens";
-                break;
+				CurrentLensText.color = Color.white;
+				break;
             }
             case Lens.LensList.REVEAL: {
                 CurrentLensText.text = "Reveal Lens";
-                break;
+				CurrentLensText.color = Color.red;
+				break;
             }
             case Lens.LensList.REVERSE: {
                 CurrentLensText.text = "Reverse Lens";
-                break;
+				CurrentLensText.color = Color.green;
+				break;
             }
             case Lens.LensList.REALITY: {
                 CurrentLensText.text = "Reality Lens";
-                break;
+				CurrentLensText.color = Color.blue;
+				break;
             }
         }
 

@@ -710,6 +710,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "SwapLens",
+                    "type": "Button",
+                    "id": "5c1d3185-5a81-4918-b631-00917b9f4711",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -864,6 +873,17 @@
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "ToggleLensWheel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "78d994d7-9f05-44bd-86b7-5ef237c5c242",
+                    "path": "<XRController>{LeftHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "SwapLens",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

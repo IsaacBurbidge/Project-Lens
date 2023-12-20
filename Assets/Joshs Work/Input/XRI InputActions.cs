@@ -732,6 +732,15 @@ public partial class @XRIInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SwapLens"",
+                    ""type"": ""Button"",
+                    ""id"": ""5c1d3185-5a81-4918-b631-00917b9f4711"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -886,6 +895,17 @@ public partial class @XRIInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": ""Generic XR Controller"",
                     ""action"": ""ToggleLensWheel"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""78d994d7-9f05-44bd-86b7-5ef237c5c242"",
+                    ""path"": ""<XRController>{LeftHand}/secondaryButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Generic XR Controller"",
+                    ""action"": ""SwapLens"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -2357,6 +2377,7 @@ public partial class @XRIInputActions: IInputActionCollection2, IDisposable
         m_XRILeftHandInteraction_RotateAnchor = m_XRILeftHandInteraction.FindAction("Rotate Anchor", throwIfNotFound: true);
         m_XRILeftHandInteraction_TranslateAnchor = m_XRILeftHandInteraction.FindAction("Translate Anchor", throwIfNotFound: true);
         m_XRILeftHandInteraction_ToggleLensWheel = m_XRILeftHandInteraction.FindAction("ToggleLensWheel", throwIfNotFound: true);
+        m_XRILeftHandInteraction_SwapLens = m_XRILeftHandInteraction.FindAction("SwapLens", throwIfNotFound: true);
         // XRI LeftHand Locomotion
         m_XRILeftHandLocomotion = asset.FindActionMap("XRI LeftHand Locomotion", throwIfNotFound: true);
         m_XRILeftHandLocomotion_TeleportSelect = m_XRILeftHandLocomotion.FindAction("Teleport Select", throwIfNotFound: true);
@@ -2711,6 +2732,7 @@ public partial class @XRIInputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_XRILeftHandInteraction_RotateAnchor;
     private readonly InputAction m_XRILeftHandInteraction_TranslateAnchor;
     private readonly InputAction m_XRILeftHandInteraction_ToggleLensWheel;
+    private readonly InputAction m_XRILeftHandInteraction_SwapLens;
     public struct XRILeftHandInteractionActions
     {
         private @XRIInputActions m_Wrapper;
@@ -2725,6 +2747,7 @@ public partial class @XRIInputActions: IInputActionCollection2, IDisposable
         public InputAction @RotateAnchor => m_Wrapper.m_XRILeftHandInteraction_RotateAnchor;
         public InputAction @TranslateAnchor => m_Wrapper.m_XRILeftHandInteraction_TranslateAnchor;
         public InputAction @ToggleLensWheel => m_Wrapper.m_XRILeftHandInteraction_ToggleLensWheel;
+        public InputAction @SwapLens => m_Wrapper.m_XRILeftHandInteraction_SwapLens;
         public InputActionMap Get() { return m_Wrapper.m_XRILeftHandInteraction; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -2764,6 +2787,9 @@ public partial class @XRIInputActions: IInputActionCollection2, IDisposable
             @ToggleLensWheel.started += instance.OnToggleLensWheel;
             @ToggleLensWheel.performed += instance.OnToggleLensWheel;
             @ToggleLensWheel.canceled += instance.OnToggleLensWheel;
+            @SwapLens.started += instance.OnSwapLens;
+            @SwapLens.performed += instance.OnSwapLens;
+            @SwapLens.canceled += instance.OnSwapLens;
         }
 
         private void UnregisterCallbacks(IXRILeftHandInteractionActions instance)
@@ -2798,6 +2824,9 @@ public partial class @XRIInputActions: IInputActionCollection2, IDisposable
             @ToggleLensWheel.started -= instance.OnToggleLensWheel;
             @ToggleLensWheel.performed -= instance.OnToggleLensWheel;
             @ToggleLensWheel.canceled -= instance.OnToggleLensWheel;
+            @SwapLens.started -= instance.OnSwapLens;
+            @SwapLens.performed -= instance.OnSwapLens;
+            @SwapLens.canceled -= instance.OnSwapLens;
         }
 
         public void RemoveCallbacks(IXRILeftHandInteractionActions instance)
@@ -3429,6 +3458,7 @@ public partial class @XRIInputActions: IInputActionCollection2, IDisposable
         void OnRotateAnchor(InputAction.CallbackContext context);
         void OnTranslateAnchor(InputAction.CallbackContext context);
         void OnToggleLensWheel(InputAction.CallbackContext context);
+        void OnSwapLens(InputAction.CallbackContext context);
     }
     public interface IXRILeftHandLocomotionActions
     {
