@@ -31,13 +31,12 @@ public class TagReversibleObjects : MonoBehaviour {
 
     // Misc
     public List<GameObject> reversibleObjectsList;
-    public int objectToRemoveIndex;
+    private int objectToRemoveIndex;
     private RaycastHit hit;
     private int maxSizeOfList = 3;
     [SerializeField]
     private SwitchLens swapLensScript;
    
-
     // Start is called before the first frame update
     void Start() {
         

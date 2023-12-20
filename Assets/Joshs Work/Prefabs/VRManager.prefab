@@ -3358,12 +3358,12 @@ MonoBehaviour:
     m_Reference: {fileID: 7238694495653421533, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   leftHandObject: {fileID: 1142920109016562212}
   rightHandObject: {fileID: 2923102872289746426}
-  reversibleObjectsList: []
-  swapLensScript: {fileID: 2313024836916092913}
-  defaultMat: {fileID: 2100000, guid: 3e7ac1c75732f1d4486815a3ce945e24, type: 2}
+  previousMatList: []
   reversibleMat: {fileID: 2100000, guid: 6d6fa61c24c64014e8417af8bcc38302, type: 2}
   leftHandRayInteractor: {fileID: 560127567127528460}
   rightHandRayInteractor: {fileID: 6074686297025457241}
+  reversibleObjectsList: []
+  swapLensScript: {fileID: 2313024836916092913}
 --- !u!1 &8471000980601398869
 GameObject:
   m_ObjectHideFlags: 0
