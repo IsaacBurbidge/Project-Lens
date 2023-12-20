@@ -8,8 +8,13 @@ public class LockedDoor : MonoBehaviour, IInteractable
     [Header("Prompts")]
     [SerializeField] private string lockedPrompt;
     [SerializeField] private string unlockedPrompt;
+
+    [Header("Events")]
+    [SerializeField] private bool triggersEvent;
+    [SerializeField] Eventy eventTrigger;
     private string prompt;
     public bool hasLeverPiece = false;
+
     public string InteractionPrompt => prompt;
 
     private void Start()
@@ -27,6 +32,10 @@ public class LockedDoor : MonoBehaviour, IInteractable
         if (hasLeverPiece)
         {
             Debug.Log("Open door");
+            if(triggersEvent)
+            {
+                eventTrigger.triggerTheEvent();
+            }
             return true;
         }
 
