@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class PickUpPiece : MonoBehaviour, IInteractable
 {
+    [SerializeField] private LockedDoor lockedDoor;
     [SerializeField] private string prompt;
     public string InteractionPrompt => prompt;
 
     public bool Interact(Interactor interactor)
     {
-        Debug.Log("Open this mf");
+        lockedDoor.UnlockDoor();
+        GameObject.Destroy(gameObject);
         return true;
     }
 }
