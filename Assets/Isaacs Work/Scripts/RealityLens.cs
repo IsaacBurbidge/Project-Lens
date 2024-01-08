@@ -48,23 +48,23 @@ public class RealityLens : Lens {
     }
 
     public override void DeactivateLens() {
-  //      if (CanSwapRoom) {
-		//	switch (ActiveRoom) {
-		//		case Rooms.Room1: {
-		//			Room1.SetActive(false);
-		//			Room2.SetActive(true);
-		//			ActiveRoom = Rooms.Room2;
-		//			break;
-		//		}
-		//		case Rooms.Room2: {
-		//			Room2.SetActive(false);
-		//			Room1.SetActive(true);
-		//			ActiveRoom = Rooms.Room1;
-		//			break;
-		//		}
-		//	}
-		//}
-    }
+		if (CanSwapRoom) {
+			switch (ActiveRoom) {
+				case Rooms.Room1: {
+					Room1.SetActive(false);
+					Room2.SetActive(true);
+					ActiveRoom = Rooms.Room2;
+					break;
+				}
+				case Rooms.Room2: {
+					Room2.SetActive(false);
+					Room1.SetActive(true);
+					ActiveRoom = Rooms.Room1;
+					break;
+				}
+			}
+		}
+	}
 
 	private void OnTriggerEnter(Collider other) {
 		CanSwapRoom = false;

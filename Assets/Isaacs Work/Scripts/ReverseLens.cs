@@ -3,25 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ReverseLens : Lens {
-	public Animator animator;
+	public Animator Animator;
 
 	private void Start() {
 		VisibleLens = LensList.REVERSE;
-		animator = GetComponent<Animator>();
+		Animator = GetComponent<Animator>();
+		if (Animator != null ) {
+			Animator = transform.parent.GetComponent<Animator>();
+		}
 	}
 
 	public override void ActivateLens() {
 		if (tag == "Reverse Object") {
-			if (animator != null) {
-				animator.SetBool("HasReversed",true);
+			if (Animator != null) {
+				Animator.SetBool("HasReversed",true);
 			}
 		}
 	}
 
 	public override void DeactivateLens() {
 		if (tag == "Reverse Object" || tag == "Reverse Lens") {
-			if (animator != null) {
-				animator.SetBool("HasReversed", false);
+			if (Animator != null) {
+				Animator.SetBool("HasReversed", false);
 			}
 		}
 	}
