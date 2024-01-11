@@ -8,7 +8,7 @@ public class ReverseLens : Lens {
 	private void Start() {
 		VisibleLens = LensList.REVERSE;
 		Animator = GetComponent<Animator>();
-		if (Animator != null ) {
+		if (Animator == null ) {
 			Animator = transform.parent.GetComponent<Animator>();
 		}
 	}
