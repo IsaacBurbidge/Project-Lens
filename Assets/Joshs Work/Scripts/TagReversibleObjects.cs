@@ -21,8 +21,6 @@ public class TagReversibleObjects : MonoBehaviour {
     [SerializeField]
     private List<Material> previousParentMatList;
     [SerializeField]
-    private List<Material> previousChildMatList;
-    [SerializeField]
     private Material reversibleMat;
 
     // Ray Interactor Script References
@@ -69,31 +67,17 @@ public class TagReversibleObjects : MonoBehaviour {
 
             // Reverts the tag back to the Reverse Lens default tag
             hit.transform.gameObject.tag = "Reverse Lens";
-
             // Changes Color of Parent Object Material back to its Previous Material 
             hit.transform.gameObject.GetComponent<MeshRenderer>().material = previousParentMatList[objectToRemoveIndex];
+
+            // Check if object has any children
+            if (hit.transform.childCount > 0) {
+                RevertChildrenLogic();
+            }
+
+            // Remove the material from the list
             previousParentMatList.Remove(previousParentMatList[objectToRemoveIndex]);
-
-
-			// Change Child Material Back to original - doesn't quite work
-			if (hit.transform.childCount > 0) {
-				Transform[] childrenArray = null;
-
-				// Get each child and store them in an array
-				childrenArray = hit.transform.gameObject.GetComponentsInChildren<Transform>();
-
-				// Assigns the Reverse Object tag to every child object
-				foreach (Transform child in childrenArray) {
-				    // Reverts the Childs tag back to the Reverse Lens default tag
-				    child.gameObject.tag = "Reverse Lens";
-				}
-			}
-
-			//if (GetComponent<SwitchLens>() != null && GetComponent<SwitchLens>().CurrentLens == Lens.LensList.REVERSE) {
-			//	hit.transform.GetComponent<ReverseLens>().DeactivateLens();
-			//}
-
-		}
+        }
         // Checks that the Object is not already inside the reversibleObjectsList and that it does contain the 'Reverse Lens' tag
         else if (reversibleObjectsList.Contains(hit.transform.gameObject) == false && hit.transform.CompareTag("Reverse Lens") == true) {
             // Check if the List has reached max capacity
@@ -126,8 +110,89 @@ public class TagReversibleObjects : MonoBehaviour {
         rightHandRayInteractor.TryGetCurrent3DRaycastHit(out hit);
         return rightHit;
     }
-    // Carries out the logic behind saving a parent objects previous material + assigning it as reversible + changing its colour to the reverse one
-    private void ReverseTagParentLogic() {
+
+
+    // Checks to see if the object being tagged is a child of an object that is able to be reversed
+    private void CheckParent() {
+        // Has a parent with a reversible tag
+        if (hit.transform.parent.gameObject.CompareTag("Reverse Lens")) {
+            // Adds the Parent Object to the List
+            reversibleObjectsList.Add(hit.transform.parent.gameObject);
+            ReverseTagParentLogic();
+        } 
+        // Has children
+        else if( hit.transform.childCount > 0) {
+            // Adds this Object to the List
+            reversibleObjectsList.Add(hit.transform.gameObject);
+            ReverseTagObjectLogic();
+            ChangeChildrensMaterial();
+            ChangeChildrensTag();
+        } 
+        // Doesn't have a parent with a reversible tag and has no children
+        else {
+            // Adds this Object to the List
+            reversibleObjectsList.Add(hit.transform.gameObject);
+            ReverseTagObjectLogic();
+        }
+    }
+
+    // Tagged a Child so: Change the material of all the Parents children to the reverse one
+    private void ChangeParentChildrensMaterial() {
+        Transform[] parentChildrenArray = null;
+
+        // Get each child from the parent and store them in an array
+        parentChildrenArray = hit.transform.parent.GetComponentsInChildren<Transform>();
+
+        // Assigns the Reverse Object Material to every child object
+        foreach (Transform childObj in parentChildrenArray) {
+            childObj.gameObject.GetComponent<MeshRenderer>().material = reversibleMat;
+        }
+    }
+
+    // Tagged a Parent: Change the material of all its children to the reverse one
+    private void ChangeChildrensMaterial() {
+        Transform[] childrenArray = null;
+
+        // Get each child and store them in an array
+        childrenArray = hit.transform.GetComponentsInChildren<Transform>();
+
+        // Assigns the Reverse Object Material to every child object
+        foreach (Transform childObj in childrenArray) {
+            childObj.gameObject.GetComponent<MeshRenderer>().material = reversibleMat;
+        }
+    }
+
+    // Tagged a Parent: Change the tag of all its children to the reverse one
+    private void ChangeChildrensTag() {
+        Transform[] childrenArray = null;
+
+        // Get each child store them in an array
+        childrenArray = hit.transform.GetComponentsInChildren<Transform>();
+
+        // Assigns the Reverse tag to every child object
+        foreach (Transform childObj in childrenArray) {
+            childObj.transform.gameObject.tag = "Reverse Object";
+        }
+    }
+
+
+    // Reverts all childrens material and tag back to their previous ones once a parent object has been untagged as reversible
+    private void RevertChildrenLogic() {
+        Transform[] childrenArray = null;
+
+        // Get each child and store them in an array
+        childrenArray = hit.transform.gameObject.GetComponentsInChildren<Transform>();
+
+        // Revert material and tag for every child object
+        foreach (Transform childObj in childrenArray) {
+            childObj.transform.gameObject.GetComponent<MeshRenderer>().material = previousParentMatList[objectToRemoveIndex];
+            childObj.transform.gameObject.tag = "Reverse Lens";
+        }
+
+    }
+
+    // Carries out the logic behind saving an objects (that doesn't have a parent) previous material + assigning it as reversible + changing its colour to the reverse one
+    private void ReverseTagObjectLogic() {
         // Changes the tag to the Reverse Object tag - allows the object to be reversed
         hit.transform.gameObject.tag = "Reverse Object";
         // Saves the Objects Material in an array so it can revert back to its material once it is un-tagged
@@ -136,35 +201,21 @@ public class TagReversibleObjects : MonoBehaviour {
         hit.transform.gameObject.GetComponent<MeshRenderer>().material = reversibleMat;
     }
 
-    // Carries out the logic behind saving an child objects previous material + assigning it as reversible + changing its colour to the reverse one
-    private void ReverseTagChildLogic() {
-        Transform[] childrenArray = null;
+    // Carries out the logic behind saving a parent objects (the child has been tagged) previous material + assigning it as reversible + changing its colour to the reverse one
+    private void ReverseTagParentLogic() {
+        // Changes both the Child the Parents tag to the Reverse Object tag - allows the objects to be reversed
+        hit.transform.gameObject.tag = "Reverse Object";
+        hit.transform.parent.gameObject.tag = "Reverse Object";
 
-        // Get each child and store them in an array
-        childrenArray = hit.transform.GetComponentsInChildren<Transform>();
-
-        // Assigns the Reverse Object tag to every child object
-        foreach (Transform childObj in childrenArray) {
-            childObj.gameObject.tag = "Reverse Object";
-        }
+        // Saves the Objects Material in an array so it can revert back to its material once it is un-tagged
+        previousParentMatList.Add(hit.transform.parent.gameObject.GetComponent<MeshRenderer>().material);
+		// Changes Color of Object Material to Reversible Material
+		hit.transform.parent.gameObject.GetComponent<MeshRenderer>().material = reversibleMat;
+        ChangeParentChildrensMaterial();
     }
 
     // Checks if the Object hit with the ray is reversible or not.
     private void TagObject() {
-        // Adds Object to the List
-        reversibleObjectsList.Add(hit.transform.gameObject);
-
-        // Check if the object being tagged has any children
-        if(hit.transform.childCount > 0) {
-            ReverseTagParentLogic();
-            // Check if Parent Object has an animator component attached AND if it has the ability to be Reversed
-            if (hit.transform.gameObject.GetComponent<Animator>() == true && hit.transform.CompareTag("Reverse Object") == true) {
-                ReverseTagChildLogic();
-            }
-            
-        } 
-        else if (hit.transform.childCount == 0) {
-            ReverseTagParentLogic();
-        } 
+        CheckParent();
     }
 }
