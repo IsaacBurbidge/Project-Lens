@@ -31,12 +31,6 @@ public class Urchin : MonoBehaviour
 			} else {
 				Agent.SetDestination(InitialPos);
 			}
-
-			Debug.Log("hi");
 		}
-		//} else if (transform.position == InitialPos) {
-		//	Agent.SetDestination(TargetPos);
-		//	Debug.Log("yo");
-		//}
 	} 
 }
