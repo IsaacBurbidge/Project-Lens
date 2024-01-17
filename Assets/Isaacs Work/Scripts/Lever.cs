@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Lever : MonoBehaviour
 {
-	[SerializeField]
-	private bool IsFixed = false;
+	public bool IsFixed = false;
 	[SerializeField]
 	private GameObject TopOfLever;
 
