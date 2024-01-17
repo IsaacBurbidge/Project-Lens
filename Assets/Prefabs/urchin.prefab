@@ -146,6 +146,8 @@ MonoBehaviour:
   TargetPos: {x: 0, y: 0, z: 0}
   InitialPos: {x: 0, y: 0, z: 0}
   Agent: {fileID: 0}
+  Angle1: {x: 10, y: 0, z: 0}
+  Angle2: {x: -10, y: 0, z: 0}
 --- !u!195 &2357174754746630260
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -164,7 +166,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 2
+  m_Height: 0.7
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4

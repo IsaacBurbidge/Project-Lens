@@ -11,6 +11,10 @@ public class Urchin : MonoBehaviour
 	private Vector3 InitialPos;
 	[SerializeField]
 	private NavMeshAgent Agent;
+	[SerializeField]
+	private Vector3 Angle1;
+	[SerializeField]
+	private Vector3 Angle2;
 
 	private void Start() {
 		Agent = GetComponent<NavMeshAgent>();
@@ -24,7 +28,6 @@ public class Urchin : MonoBehaviour
 	}
 
 	private void Wander() {
-
 		if (Agent.remainingDistance == 0) {
 			if (transform.position == InitialPos) {
 				Agent.SetDestination(TargetPos);
@@ -33,4 +36,14 @@ public class Urchin : MonoBehaviour
 			}
 		}
 	} 
+
+	void VisionCone() {
+		float DotProduct = (Angle1.x*Angle2.x)+ (Angle1.y*Angle2.y) + (Angle2.z*Angle2.z);
+		
+	}
+
+	private void OnDrawGizmos() {
+		Gizmos.DrawLine(transform.position, Angle1);
+		Gizmos.DrawLine(transform.position, Angle2);
+	}
 }
