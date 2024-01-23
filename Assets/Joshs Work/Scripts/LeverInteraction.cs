@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class LeverInteraction : MonoBehaviour {
-    [SerializeField] 
+    [SerializeField]
     private Lever leverScript;
-    public bool canPushLever = false;
+	[SerializeField]
+	private Animator Animator;
+	public bool canPushLever = false;
     public bool hasPushedLever = false;
 
     // Start is called before the first frame update
     void Start() {
-        
+
     }
 
     void FixedUpdate() {
@@ -20,21 +22,31 @@ public class LeverInteraction : MonoBehaviour {
         }
     }
 
-    private void PlayLeverAnim() {
+    public void PlayLeverAnim() {
         // If the Lever is interactable (has been fixed), play the lever animation
-        if(canPushLever == true) {
+        if (canPushLever == true) {
             Debug.Log("Play Lever Push Animation");
-        }
+			Animator.SetBool("IsOpen", true);
+		}
     }
 
-    private void OnCollisionEnter(Collision other){
-        Debug.Log("Hand Collision");
-        // Player hands interaction with the Lever
-        if (other.gameObject.CompareTag("LeftHand") || other.gameObject.CompareTag("RightHand") || other.gameObject.name == "LeverBase") {
-            PlayLeverAnim();
-            Debug.Log("Hand Collision");
+    private void OnCollisionEnter(Collision collision) {
+        if (collision.gameObject.GetComponentInChildren<CapsuleCollider>().CompareTag("Lever")) {
+    
+			leverScript.IsOpen = true;
+			Animator.SetBool("IsOpen", true);
+			Debug.Log("Play Lever Animation");
+			PlayLeverAnim();
+		}
+        //private void OnCollisionEnter(Collision other){
+        //    Debug.Log("Hand Collision");
+        //    // Player hands interaction with the Lever
+        //    if (other.gameObject.CompareTag("LeftHand") || other.gameObject.CompareTag("RightHand") || other.gameObject.name == "LeverBase") {
+        //        PlayLeverAnim();
+        //        Debug.Log("Hand Collision");
 
-        }
+        //    }
 
+        //}
     }
 }

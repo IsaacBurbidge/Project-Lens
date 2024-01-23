@@ -5,6 +5,7 @@ using UnityEngine;
 public class Lever : MonoBehaviour
 {
 	public bool IsFixed = false;
+	public bool IsOpen = false;
 	[SerializeField]
 	private GameObject TopOfLever;
 
@@ -19,7 +20,7 @@ public class Lever : MonoBehaviour
 		if (!IsFixed && other.tag == "Fix") {
 			TopOfLever.SetActive(true);
 			Destroy(other.gameObject);
-			Animator.SetBool("IsFixed",true);
+			Animator.SetBool("IsFixed", true);
 		}
 	}
 }
