@@ -3546,12 +3546,14 @@ GameObject:
   - component: {fileID: 376563295274897365}
   - component: {fileID: 5273806139611348398}
   - component: {fileID: 3904070054354422576}
+  - component: {fileID: 3584360312202188136}
   - component: {fileID: 7739154720376136569}
   - component: {fileID: 2845987394153751840}
   - component: {fileID: 2086268741996398546}
   - component: {fileID: 6399529214749335798}
   - component: {fileID: 2701279521791443139}
   - component: {fileID: 5254140089929711609}
+  - component: {fileID: 4569495065568978070}
   m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
@@ -3646,6 +3648,20 @@ MonoBehaviour:
   m_LocomotionProvider: {fileID: 6172328855788691997}
   m_MinHeight: 0
   m_MaxHeight: Infinity
+--- !u!114 &3584360312202188136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8579626645191958794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01f69dc1cb084aa42b2f2f8cd87bc770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_System: {fileID: 7944319875204702574}
+  m_DelayTime: 0
 --- !u!143 &7739154720376136569
 CharacterController:
   m_ObjectHideFlags: 0
@@ -3877,6 +3893,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4569495065568978070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8579626645191958794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b9925daff409b543aca2f753232975d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leverScript: {fileID: 0}
+  Animator: {fileID: 0}
+  canPushLever: 0
+  hasPushedLever: 0
 --- !u!1 &9121457738415570826
 GameObject:
   m_ObjectHideFlags: 0
