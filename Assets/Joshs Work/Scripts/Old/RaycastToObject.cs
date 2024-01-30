@@ -11,7 +11,7 @@ public class RaycastToObject : MonoBehaviour {
     // Add List variable to Lens.cs script - DO LATER! - OR - Could Add the Lens.cs script on creation of this script
     public List<GameObject> reversibleObjectsList;
     private RaycastHit hit;
-    private int maxSizeOfList = 3;
+    private int maxSizeOfList = 30; // change back to 3
     [SerializeField]
     private SwitchLens swapLensScript;
 

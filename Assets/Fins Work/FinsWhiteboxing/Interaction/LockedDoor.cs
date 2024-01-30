@@ -6,8 +6,8 @@ using UnityEngine.Rendering;
 public class LockedDoor : MonoBehaviour, IInteractable
 {
     [Header("Prompts")]
-    [SerializeField] private string lockedPrompt;
-    [SerializeField] private string unlockedPrompt;
+    [SerializeField] public string lockedPrompt;
+    [SerializeField] public string unlockedPrompt;
 
     [Header("Events")]
     [SerializeField] private bool triggersEvent;

@@ -2255,6 +2255,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4415745982179208541, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4415745982179208543, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4615626609390903681, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -2359,6 +2367,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5299454468733366696, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5356349453757511009, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -2448,6 +2460,10 @@ PrefabInstance:
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 3068761050892623133}
+    - target: {fileID: 1071477497836286659, guid: 58bc2aa1d35b0a047944d07f3fc3976e, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayFirstDoorLeverAnim
+      objectReference: {fileID: 0}
     - target: {fileID: 1554667715859418127, guid: 58bc2aa1d35b0a047944d07f3fc3976e, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.4944008
@@ -4078,6 +4094,10 @@ PrefabInstance:
       propertyPath: leverScript
       value: 
       objectReference: {fileID: 1267694845}
+    - target: {fileID: 4569495065568978070, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
+      propertyPath: firstDoorAnimator
+      value: 
+      objectReference: {fileID: 1267694846}
     - target: {fileID: 4646912706846953687, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
       propertyPath: m_RaycastMask.m_Bits
       value: 2147483745
