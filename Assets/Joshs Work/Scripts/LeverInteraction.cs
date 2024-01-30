@@ -7,6 +7,8 @@ public class LeverInteraction : MonoBehaviour {
     private Lever leverScript;
 	[SerializeField]
 	private Animator Animator;
+	[SerializeField]
+	private Animator doorAnimator;
 	public bool canPushLever = false;
     public bool hasPushedLever = false;
 
@@ -27,6 +29,7 @@ public class LeverInteraction : MonoBehaviour {
         if (canPushLever == true) {
             Debug.Log("Play Lever Push Animation");
 			Animator.SetBool("IsOpen", true);
+			//doorAnimator.Play()
 		}
     }
 
