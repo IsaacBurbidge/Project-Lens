@@ -6,9 +6,9 @@ public class LeverInteraction : MonoBehaviour {
     [SerializeField]
     private Lever leverScript;
 	[SerializeField]
-	private Animator Animator;
+	private Animator firstDoorAnimator;
 	[SerializeField]
-	private Animator doorAnimator;
+	private Animator secondDoorAnimator;
 	public bool canPushLever = false;
     public bool hasPushedLever = false;
 
@@ -24,22 +24,28 @@ public class LeverInteraction : MonoBehaviour {
         }
     }
 
-    public void PlayLeverAnim() {
+    public void PlayFirstDoorLeverAnim() {
         // If the Lever is interactable (has been fixed), play the lever animation
         if (canPushLever == true) {
-            Debug.Log("Play Lever Push Animation");
-			Animator.SetBool("IsOpen", true);
-			//doorAnimator.Play()
+			firstDoorAnimator.SetBool("IsOpen", true);
 		}
     }
 
-    private void OnCollisionEnter(Collision collision) {
+	public void PlaySecondDoorLeverAnim() {
+		// If the Lever is interactable (has been fixed), play the lever animation
+		if (canPushLever == true) {
+			secondDoorAnimator.SetBool("IsOpen", true);
+		}
+	}
+
+	private void OnCollisionEnter(Collision collision) {
         if (collision.gameObject.GetComponentInChildren<CapsuleCollider>().CompareTag("Lever")) {
     
 			leverScript.IsOpen = true;
-			Animator.SetBool("IsOpen", true);
+			firstDoorAnimator.SetBool("IsOpen", true);
 			Debug.Log("Play Lever Animation");
-			PlayLeverAnim();
+            PlayFirstDoorLeverAnim();
+            PlaySecondDoorLeverAnim();
 		}
         //private void OnCollisionEnter(Collision other){
         //    Debug.Log("Hand Collision");
