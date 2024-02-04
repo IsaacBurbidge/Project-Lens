@@ -4866,10 +4866,6 @@ PrefabInstance:
       value: MessageCanvas (4)
       objectReference: {fileID: 0}
     - target: {fileID: 8126129754344145897, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8126129754344145897, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -5067,10 +5063,6 @@ PrefabInstance:
     - target: {fileID: 8126129754344145897, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
       propertyPath: m_Name
       value: MessageCanvas (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8126129754344145897, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8126129754344145897, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -11020,10 +11012,6 @@ PrefabInstance:
     - target: {fileID: 8126129754344145897, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
       propertyPath: m_Name
       value: MessageCanvas (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8126129754344145897, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8126129754344145897, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -22966,6 +22954,86 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 510102811}
     m_Modifications:
+    - target: {fileID: 3385330560627664276, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b26e6e5d3fb4259428847e593a6ab9a4, type: 3}
+    - target: {fileID: 3385330560627664276, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3385330560627664276, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3385330560627664276, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3385330560627664276, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3901909544556350875, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3901909544556350875, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3901909544556350875, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3901909544556350875, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3901909544556350875, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3901909544556350875, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3901909544556350875, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4069808710031535338, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4069808710031535338, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411767078112373954, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411767078112373954, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411767078112373954, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411767078112373954, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411767078112373954, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411767078112373954, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5577280113761522698, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -23050,8 +23118,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MessageCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 8126129754344145897, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4595910069912791190, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
@@ -23744,10 +23817,6 @@ PrefabInstance:
     - target: {fileID: 8126129754344145897, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
       propertyPath: m_Name
       value: MessageCanvas (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8126129754344145897, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8126129754344145897, guid: 088fd5cd361f42b488ad56814eac31ae, type: 3}
       propertyPath: m_StaticEditorFlags
