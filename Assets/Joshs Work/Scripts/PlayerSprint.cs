@@ -28,7 +28,7 @@ public class PlayerSprint : MonoBehaviour {
 	private void ToggleSprint() {
         if(isSprinting == true) {
             // Change to Walking Speed
-            continuousMoveProviderBase.moveSpeed = 1.5f;
+            continuousMoveProviderBase.moveSpeed = 3.0f;
             isSprinting = false;
         }
         else if(isSprinting == false) {
