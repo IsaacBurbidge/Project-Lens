@@ -5,7 +5,9 @@ using UnityEngine;
 // Type the desired UI Text in the inspector that you want to appear on screen when the player enters this objects trigger
 public class UIPromptTextToShow : MonoBehaviour {
     public string uiPromptText = "";
+	
+	
 	// Used for Prompts such as Lever Broken and then Fixed
-	public bool canShowUIPrompt = false;
+	//public bool canShowUIPrompt = false;
 
 }

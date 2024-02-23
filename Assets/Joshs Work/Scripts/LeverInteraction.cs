@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class LeverInteraction : MonoBehaviour {
-    [SerializeField]
-    private Lever leverScript;
+    //[SerializeField]
+    //private Lever leverScript;
 	[SerializeField]
 	private Animator firstDoorAnimator;
 	[SerializeField]
@@ -19,9 +19,9 @@ public class LeverInteraction : MonoBehaviour {
 
     void FixedUpdate() {
         // If Lever has been fixed, enable interaction with the Lever
-        if (leverScript.IsFixed == true) {
-            canPushLever = true;
-        }
+        //if (leverScript.IsFixed == true) {
+        //    canPushLever = true;
+        //}
     }
 
     public void PlayFirstDoorLeverAnim() {
@@ -41,7 +41,7 @@ public class LeverInteraction : MonoBehaviour {
 	private void OnCollisionEnter(Collision collision) {
         if (collision.gameObject.GetComponentInChildren<CapsuleCollider>().CompareTag("Lever")) {
     
-			leverScript.IsOpen = true;
+			//leverScript.IsOpen = true;
 			firstDoorAnimator.SetBool("IsOpen", true);
 			Debug.Log("Play Lever Animation");
             PlayFirstDoorLeverAnim();

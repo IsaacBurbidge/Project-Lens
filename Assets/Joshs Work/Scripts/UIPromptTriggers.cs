@@ -17,9 +17,9 @@ public class UIPromptTriggers : MonoBehaviour {
     }
 
     // When Player Enters a trigger, it checks the objects prompt text and displays it in world space
-    private void OnTriggerEnter(Collider other) {
+    private void OnTriggerStay(Collider other) {
         if (other.gameObject.CompareTag("UIPrompt")) {
-            if (uiPromptTriggers.Contains(other.gameObject) == true && other.gameObject.GetComponent<UIPromptTextToShow>().canShowUIPrompt == true) {
+            if (uiPromptTriggers.Contains(other.gameObject) == true) {
                 // Find the Object that you Triggered in a pre-defined list of UI Prompts and Display the relevant UI text in World Space
                 int indexOfTrigger = uiPromptTriggers.IndexOf(other.gameObject);
                 GameObject uiPromptTriggerGameObject = uiPromptTriggers[indexOfTrigger];
@@ -30,7 +30,7 @@ public class UIPromptTriggers : MonoBehaviour {
     }
     private void OnTriggerExit(Collider other) {
         if (other.gameObject.CompareTag("UIPrompt")) {
-            if (uiPromptTriggers.Contains(other.gameObject) == true && other.gameObject.GetComponent<UIPromptTextToShow>().canShowUIPrompt == true) {
+            if (uiPromptTriggers.Contains(other.gameObject) == true) {
                 // Find the Object that you Triggered in a pre-defined list of UI Prompts and Display the relevant UI in World Space
                 int indexOfTrigger = uiPromptTriggers.IndexOf(other.gameObject);
                 GameObject uiPromptTriggerGameObject = uiPromptTriggers[indexOfTrigger];
