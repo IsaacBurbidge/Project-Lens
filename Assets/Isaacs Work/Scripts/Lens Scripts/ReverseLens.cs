@@ -7,10 +7,10 @@ public class ReverseLens : Lens {
 
 	private void Start() {
 		VisibleLens = LensList.REVERSE;
-		Animator = GetComponent<Animator>();
-		if (Animator == null ) {
-			Animator = transform.parent.GetComponent<Animator>();
-		}
+		//Animator = GetComponent<Animator>();
+		//if (Animator == null ) {
+			//Animator = transform.parent.GetComponent<Animator>();
+		//}
 	}
 
 	public override void ActivateLens() {

@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class LeverTriggerLevelTwo : MonoBehaviour {
+public class LeverTriggerAnimation : MonoBehaviour {
 	[SerializeField]
 	private Animator Animator;
 	public bool isDoorOpen = false;
