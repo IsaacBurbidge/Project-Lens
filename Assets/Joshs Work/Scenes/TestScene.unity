@@ -465,7 +465,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1511777880}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LensWheel, Assembly-CSharp
         m_MethodName: ClickRealityLensBtn
         m_Mode: 1
@@ -636,7 +636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VisibleLens: 0
-  animator: {fileID: 0}
+  Animator: {fileID: 0}
 --- !u!1 &86794027
 GameObject:
   m_ObjectHideFlags: 0
@@ -1648,7 +1648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VisibleLens: 0
-  animator: {fileID: 0}
+  Animator: {fileID: 0}
 --- !u!43 &277168412
 Mesh:
   m_ObjectHideFlags: 0
@@ -1933,7 +1933,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VisibleLens: 0
-  animator: {fileID: 0}
+  Animator: {fileID: 0}
 --- !u!1 &335182751
 GameObject:
   m_ObjectHideFlags: 0
@@ -2213,7 +2213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VisibleLens: 0
-  animator: {fileID: 0}
+  Animator: {fileID: 0}
 --- !u!1 &521490790
 GameObject:
   m_ObjectHideFlags: 0
@@ -3408,7 +3408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VisibleLens: 0
-  animator: {fileID: 0}
+  Animator: {fileID: 0}
 --- !u!1 &757899839
 GameObject:
   m_ObjectHideFlags: 0
@@ -3492,7 +3492,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1511777880}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LensWheel, Assembly-CSharp
         m_MethodName: ClickRevealLensBtn
         m_Mode: 1
@@ -3743,7 +3743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VisibleLens: 0
-  animator: {fileID: 0}
+  Animator: {fileID: 0}
 --- !u!1 &883965050
 GameObject:
   m_ObjectHideFlags: 0
@@ -3827,7 +3827,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1511777880}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LensWheel, Assembly-CSharp
         m_MethodName: ClickNoLensBtn
         m_Mode: 1
@@ -4974,7 +4974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VisibleLens: 0
-  animator: {fileID: 0}
+  Animator: {fileID: 0}
 --- !u!1 &1100576214
 GameObject:
   m_ObjectHideFlags: 0
@@ -6285,7 +6285,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1511777880}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LensWheel, Assembly-CSharp
         m_MethodName: ClickReverseLensBtn
         m_Mode: 1
@@ -6340,17 +6340,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8997996947095583982, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
   m_PrefabInstance: {fileID: 1751602670}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1511777880 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2353165276742171541, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
-  m_PrefabInstance: {fileID: 1751602670}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17e38bea1af8dd3459a5f4ac08c44695, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1516729478
 GameObject:
   m_ObjectHideFlags: 0
@@ -6470,7 +6459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VisibleLens: 0
-  animator: {fileID: 0}
+  Animator: {fileID: 0}
 --- !u!1 &1540141656
 GameObject:
   m_ObjectHideFlags: 0
@@ -8488,7 +8477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VisibleLens: 0
-  animator: {fileID: 0}
+  Animator: {fileID: 0}
 --- !u!43 &2092736971
 Mesh:
   m_ObjectHideFlags: 0

@@ -10,8 +10,10 @@ public class RealityLens : Lens {
     private GameObject Room2;
     [SerializeField]
     private Collider TriggerVolume;
+	[SerializeField]
+	private SwitchLens switchLensScript;
 
-    enum Rooms {
+	enum Rooms {
         Room1,
         Room2
     }
@@ -24,22 +26,26 @@ public class RealityLens : Lens {
         VisibleLens = LensList.REALITY;
         Room1 = transform.GetChild(0).gameObject;
         Room2 = transform.GetChild(1).gameObject;
-        TriggerVolume = transform.GetComponent<Collider>();
+        //TriggerVolume = transform.GetComponent<Collider>();
     }
 
     public override void ActivateLens() {
         if(CanSwapRoom) {
             switch (ActiveRoom) {
                 case Rooms.Room1: {
-					Room1.SetActive(false);
-					Room2.SetActive(true);
-                    ActiveRoom = Rooms.Room2;
+					if (Room1 != null && Room1 != null) {
+						Room1.SetActive(false);
+						Room2.SetActive(true);
+						ActiveRoom = Rooms.Room2;
+					}
 					break;
                 }
 				case Rooms.Room2: {
-					Room2.SetActive(false);
-					Room1.SetActive(true);
-					ActiveRoom = Rooms.Room1;
+					if (Room1 != null && Room1 != null) {
+						Room2.SetActive(false);
+						Room1.SetActive(true);
+						ActiveRoom = Rooms.Room1;
+					}
 					break;
 				}
 			}
@@ -51,15 +57,19 @@ public class RealityLens : Lens {
 		if (CanSwapRoom) {
 			switch (ActiveRoom) {
 				case Rooms.Room1: {
-					Room1.SetActive(false);
-					Room2.SetActive(true);
-					ActiveRoom = Rooms.Room2;
+					if(Room1 != null && Room1 != null) {
+						Room1.SetActive(false);
+						Room2.SetActive(true);
+						ActiveRoom = Rooms.Room2;
+					}
 					break;
 				}
 				case Rooms.Room2: {
-					Room2.SetActive(false);
-					Room1.SetActive(true);
-					ActiveRoom = Rooms.Room1;
+					if (Room1 != null && Room1 != null) {
+						Room2.SetActive(false);
+						Room1.SetActive(true);
+						ActiveRoom = Rooms.Room1;
+					}		
 					break;
 				}
 			}
@@ -67,10 +77,24 @@ public class RealityLens : Lens {
 	}
 
 	private void OnTriggerEnter(Collider other) {
-		CanSwapRoom = false;
+		if (switchLensScript.CurrentLens == LensList.REALITY) {
+			CanSwapRoom = false;
+		}
+		else {
+			CanSwapRoom = false;
+		}	
 	}
 
 	private void OnTriggerExit(Collider other) {
-		CanSwapRoom = true;
+		if (switchLensScript.CurrentLens == LensList.REALITY) {
+			Room2.SetActive(true);
+			ActiveRoom = Rooms.Room2;
+			CanSwapRoom = true;
+		}
+		else if(switchLensScript.CurrentLens != LensList.REALITY) {
+			Room2.SetActive(false);
+			ActiveRoom = Rooms.Room1;
+			CanSwapRoom = true;
+		}
 	}
 }

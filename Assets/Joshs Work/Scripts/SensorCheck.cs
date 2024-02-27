@@ -14,29 +14,14 @@ public class SensorCheck : MonoBehaviour {
         foreach (SensorCheck sensor in sensorsArray) { 
             if(sensor.isSensorLit == true) {
                 dropLeverHandle = true;
-                Debug.Log("Yes");
             }
             else {
                 dropLeverHandle = false;
-				Debug.Log("No");
 				break;
             }
         }
         if(dropLeverHandle == true) {
 			leverHandleObj.SetActive(true);
-
 		}
 	}
-
-
-	// Start is called before the first frame update
-	void Start() {
-        
-    }
-
-    // Update is called once per frame
-    void Update() {
-        
-    }
-
 }
