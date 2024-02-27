@@ -4,14 +4,19 @@ using UnityEngine;
 
 public class LaserTrip : MonoBehaviour
 {
-    [SerializeField] string playerTag;
+    [SerializeField] 
+    string leftHand;
+	[SerializeField]
+	string rightHand;
+	[SerializeField] 
+    GameObject playerObject;
     [SerializeField] GameObject resetLocation;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag(playerTag))
+        if (other.CompareTag(leftHand) || other.CompareTag(rightHand))
         {
-            other.gameObject.transform.position = resetLocation.transform.position;
+			playerObject.transform.position = resetLocation.transform.position;
         }
     }
 }
