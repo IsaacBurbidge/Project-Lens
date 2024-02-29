@@ -8,8 +8,8 @@ OcclusionCullingSettings:
     smallestOccluder: 5
     smallestHole: 0.25
     backfaceThreshold: 100
-  m_SceneGUID: 00000000000000000000000000000000
-  m_OcclusionCullingData: {fileID: 0}
+  m_SceneGUID: 18573e3f9f7d7fb43badb5daa4e90676
+  m_OcclusionCullingData: {fileID: 36300000, guid: adecd11ed29607e4d9c9f367f8dfea3e, type: 2}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
@@ -2986,7 +2986,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 803c73eb8cf31b94f9eebecc835519a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTag: Player
+  leftHand: 
+  rightHand: 
+  playerObject: {fileID: 0}
   resetLocation: {fileID: 235094262}
 --- !u!65 &74965704
 BoxCollider:
@@ -3130,6 +3132,7 @@ MonoBehaviour:
   Room1: {fileID: 0}
   Room2: {fileID: 1075755397}
   TriggerVolume: {fileID: 77653890}
+  switchLensScript: {fileID: 0}
   CanSwapRoom: 1
 --- !u!1001 &78778729
 PrefabInstance:
@@ -18944,6 +18947,7 @@ MonoBehaviour:
   Room1: {fileID: 1490908600}
   Room2: {fileID: 1240029104}
   TriggerVolume: {fileID: 1927763170}
+  switchLensScript: {fileID: 0}
   CanSwapRoom: 1
 --- !u!1 &719886752 stripped
 GameObject:
@@ -27854,7 +27858,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 803c73eb8cf31b94f9eebecc835519a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTag: Player
+  leftHand: 
+  rightHand: 
+  playerObject: {fileID: 0}
   resetLocation: {fileID: 235094262}
 --- !u!65 &1036642116
 BoxCollider:
@@ -31148,7 +31154,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 803c73eb8cf31b94f9eebecc835519a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTag: Player
+  leftHand: 
+  rightHand: 
+  playerObject: {fileID: 0}
   resetLocation: {fileID: 297969440}
 --- !u!65 &1220184123
 BoxCollider:
@@ -31371,7 +31379,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 803c73eb8cf31b94f9eebecc835519a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTag: Player
+  leftHand: 
+  rightHand: 
+  playerObject: {fileID: 0}
   resetLocation: {fileID: 235094262}
 --- !u!65 &1223086550
 BoxCollider:
@@ -31928,7 +31938,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 803c73eb8cf31b94f9eebecc835519a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTag: Player
+  leftHand: 
+  rightHand: 
+  playerObject: {fileID: 0}
   resetLocation: {fileID: 297969440}
 --- !u!65 &1234008476
 BoxCollider:
@@ -33462,7 +33474,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 803c73eb8cf31b94f9eebecc835519a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTag: Player
+  leftHand: 
+  rightHand: 
+  playerObject: {fileID: 0}
   resetLocation: {fileID: 297969440}
 --- !u!65 &1272915652
 BoxCollider:
@@ -33806,7 +33820,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 803c73eb8cf31b94f9eebecc835519a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTag: Player
+  leftHand: 
+  rightHand: 
+  playerObject: {fileID: 0}
   resetLocation: {fileID: 297969440}
 --- !u!65 &1288031659
 BoxCollider:
@@ -34722,7 +34738,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 803c73eb8cf31b94f9eebecc835519a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTag: Player
+  leftHand: 
+  rightHand: 
+  playerObject: {fileID: 0}
   resetLocation: {fileID: 235094262}
 --- !u!65 &1345873324
 BoxCollider:
@@ -35955,7 +35973,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 803c73eb8cf31b94f9eebecc835519a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTag: Player
+  leftHand: 
+  rightHand: 
+  playerObject: {fileID: 0}
   resetLocation: {fileID: 235094262}
 --- !u!65 &1386100516
 BoxCollider:
@@ -39703,6 +39723,7 @@ MonoBehaviour:
   Room1: {fileID: 2147302177}
   Room2: {fileID: 991952042}
   TriggerVolume: {fileID: 1450532960}
+  switchLensScript: {fileID: 0}
   CanSwapRoom: 1
 --- !u!1001 &1452298463
 PrefabInstance:
@@ -55358,7 +55379,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 803c73eb8cf31b94f9eebecc835519a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTag: Player
+  leftHand: 
+  rightHand: 
+  playerObject: {fileID: 0}
   resetLocation: {fileID: 235094262}
 --- !u!65 &1941726147
 BoxCollider:
@@ -56899,6 +56922,7 @@ MonoBehaviour:
   Room1: {fileID: 2143997285}
   Room2: {fileID: 1426742809}
   TriggerVolume: {fileID: 1976329773}
+  switchLensScript: {fileID: 0}
   CanSwapRoom: 1
 --- !u!1001 &1989586749
 PrefabInstance:
@@ -59796,7 +59820,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 803c73eb8cf31b94f9eebecc835519a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTag: Player
+  leftHand: 
+  rightHand: 
+  playerObject: {fileID: 0}
   resetLocation: {fileID: 297969440}
 --- !u!65 &2069280586
 BoxCollider:
@@ -60372,7 +60398,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 803c73eb8cf31b94f9eebecc835519a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTag: Player
+  leftHand: 
+  rightHand: 
+  playerObject: {fileID: 0}
   resetLocation: {fileID: 297969440}
 --- !u!65 &2089760860
 BoxCollider:
