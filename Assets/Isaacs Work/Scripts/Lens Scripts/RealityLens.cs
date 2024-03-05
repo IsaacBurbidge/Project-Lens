@@ -77,12 +77,14 @@ public class RealityLens : Lens {
 	}
 
 	private void OnTriggerEnter(Collider other) {
-		if (switchLensScript.CurrentLens == LensList.REALITY) {
-			CanSwapRoom = false;
+		if(other.name == "Player") {
+			if (switchLensScript.CurrentLens == LensList.REALITY) {
+				CanSwapRoom = false;
+			}
+			else {
+				CanSwapRoom = false;
+			}
 		}
-		else {
-			CanSwapRoom = false;
-		}	
 	}
 
 	private void OnTriggerExit(Collider other) {

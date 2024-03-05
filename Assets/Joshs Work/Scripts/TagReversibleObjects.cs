@@ -33,7 +33,7 @@ public class TagReversibleObjects : MonoBehaviour {
     public List<GameObject> reversibleObjectsList;
     private int objectToRemoveIndex;
     private RaycastHit hit;
-    private int maxSizeOfList = 3;
+    private int maxSizeOfList = 100; // change later
     [SerializeField]
     private SwitchLens swapLensScript;
    

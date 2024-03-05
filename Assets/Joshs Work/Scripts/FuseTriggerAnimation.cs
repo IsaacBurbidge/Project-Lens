@@ -33,8 +33,8 @@ public class FuseTriggerAnimation : MonoBehaviour {
 				// Display Updated UI Prompt
 				middleFuseUIPromptObject.GetComponent<UIPromptTextToShow>().uiPromptText = "This fuse has already been activated...";
 			}
-			
-			Destroy(gameObject);
+			gameObject.SetActive(false);
+			// Destroy(gameObject);
 		}
 		else if (isFirstDoorOpen == true && other.gameObject.name == "LeftFuse_Trigger" || other.gameObject.name == "MiddleFuse_Trigger") {
 			other.gameObject.GetComponentInParent<MeshRenderer>().material = fuseMaterial;
@@ -50,8 +50,8 @@ public class FuseTriggerAnimation : MonoBehaviour {
 				// Display Updated UI Prompt
 				middleFuseUIPromptObject.GetComponent<UIPromptTextToShow>().uiPromptText = "This fuse has already been activated...";
 			}
-
-			Destroy(gameObject);
+			gameObject.SetActive(false);
+			//Destroy(gameObject);
 		}
 	}
 	private void Update() {
