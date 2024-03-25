@@ -23,7 +23,7 @@ public class SwitchLens : MonoBehaviour {
 	}
 	private void RedTint() {
 		Color imageColour;
-		imageColour.r = 1.0f;
+		imageColour.r = 0.75f;
 		imageColour.g = 0.0f;
 		imageColour.b = 0.0f;
 		imageColour.a = 0.35f;
@@ -37,7 +37,7 @@ public class SwitchLens : MonoBehaviour {
 	private void GreenTint() {
 		Color imageColour;
 		imageColour.r = 0.0f;
-		imageColour.g = 1.0f;
+		imageColour.g = 0.75f;
 		imageColour.b = 0.0f;
 		imageColour.a = 0.35f;
 		lensTintImage.color = imageColour;
@@ -51,7 +51,7 @@ public class SwitchLens : MonoBehaviour {
 		Color imageColour;
 		imageColour.r = 0.0f;
 		imageColour.g = 0.0f;
-		imageColour.b = 1.0f;
+		imageColour.b = 0.75f;
 		imageColour.a = 0.35f;
 		lensTintImage.color = imageColour;
 		lensTintImage.enabled = true;

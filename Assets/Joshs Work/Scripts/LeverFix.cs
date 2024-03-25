@@ -17,7 +17,6 @@ public class LeverFix : MonoBehaviour {
 	}
 
 	private void OnTriggerEnter(Collider other) {
-		Debug.Log(other.gameObject.name);
 		if (HasLeverHandle == false && other.gameObject.CompareTag("Lever")) {
 			HasLeverHandle = true;
 			Destroy(LeverInHandObject);
