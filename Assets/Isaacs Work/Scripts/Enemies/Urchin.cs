@@ -3,23 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Urchin : MonoBehaviour
-{
+public class Urchin : MonoBehaviour {
 	[SerializeField]
-	private Vector3 TargetPos;
+	public Vector3 TargetPos;
 	[SerializeField]
 	private Vector3 InitialPos;
 	[SerializeField]
 	private NavMeshAgent Agent;
-	[SerializeField]
-	private Vector3 Angle1;
-	[SerializeField]
-	private Vector3 Angle2;
+	bool MovingToTarget = true;
+	public Vector3 AmountToMove;
+
+	public bool AttackPlayer = false;
 
 	private void Start() {
 		Agent = GetComponent<NavMeshAgent>();
 		InitialPos = transform.position;
-		TargetPos = transform.position + new Vector3(0,0,10);
+		TargetPos = transform.position + AmountToMove;
 		Agent.SetDestination(TargetPos);
 	}
 
@@ -28,22 +27,26 @@ public class Urchin : MonoBehaviour
 	}
 
 	private void Wander() {
-		if (Agent.remainingDistance == 0) {
-			if (transform.position == InitialPos) {
+		if (AttackPlayer) {
+
+		} else if (Agent.remainingDistance == 0) {
+			if (transform.position.x == InitialPos.x && transform.position.z == InitialPos.z) {
 				Agent.SetDestination(TargetPos);
+				MovingToTarget = true;
 			} else {
 				Agent.SetDestination(InitialPos);
+				MovingToTarget = false;
 			}
 		}
-	} 
-
-	void VisionCone() {
-		float DotProduct = (Angle1.x*Angle2.x)+ (Angle1.y*Angle2.y) + (Angle2.z*Angle2.z);
-		
 	}
 
-	private void OnDrawGizmos() {
-		Gizmos.DrawLine(transform.position, Angle1);
-		Gizmos.DrawLine(transform.position, Angle2);
+	private void OnTriggerEnter(Collider other) {
+		if (MovingToTarget) {
+			Agent.SetDestination(InitialPos);
+			MovingToTarget = false;
+		} else {
+			Agent.SetDestination(TargetPos);
+			MovingToTarget = true;
+		}
 	}
 }
