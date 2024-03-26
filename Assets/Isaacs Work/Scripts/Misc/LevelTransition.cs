@@ -4,11 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class LevelTransition : MonoBehaviour {
-	void LevelSwap(int LevelIndex) {
+	public void LevelSwap(int LevelIndex) {
 		SceneManager.LoadScene(LevelIndex);
 	}
 
-	void LevelSwap(string LevelName) {
+	public void LevelSwap(string LevelName) {
 		SceneManager.LoadScene(LevelName);
 	}
 }

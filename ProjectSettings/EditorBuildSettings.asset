@@ -6,14 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Fins Work/FinsWhiteboxing/Scenes/TheMainMenu.unity
-    guid: 1055b41b4155a684f8e4a9bf8f059bd5
+    path: Assets/Scenes/MainMenu.unity
+    guid: 2f25a169041d4a9419ad0153b8a9c0cf
   - enabled: 1
-    path: Assets/Fins Work/FinsWhiteboxing/Scenes/TeacherLevel.unity
-    guid: bd98a7d098911984e8b72d7b30814bd2
+    path: Assets/Scenes/TeacherLevel.unity
+    guid: b647e880c5d43964c9843cbd50c042dd
   - enabled: 1
-    path: Assets/Fins Work/FinsWhiteboxing/Scenes/LevelO1.unity
-    guid: 18573e3f9f7d7fb43badb5daa4e90676
+    path: Assets/Scenes/TrueLevel01.unity
+    guid: 221ad32779e4e07499a46a22cab122ea
+  - enabled: 1
+    path: Assets/Scenes/TrueLevel02.unity
+    guid: 31116cae7407dac4e8b2971f2f2e17d8
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: dc5a169419fa04987b057f65238cf3ba, type: 2}
