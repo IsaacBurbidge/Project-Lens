@@ -17,6 +17,8 @@ public class SwitchLens : MonoBehaviour {
 	private GameObject noLenseImage;
 	public Lens.LensList CurrentLens = Lens.LensList.NONE;
 	Lens[] LensItems;
+	[SerializeField]
+	private ParticleAndOutlineManager particleAndOutlineManagerScript;
 
 	private void Start() {
 		LensItems = (Lens[])FindObjectsOfType(typeof(Lens));
@@ -33,6 +35,14 @@ public class SwitchLens : MonoBehaviour {
 		realityImage.SetActive(false);
 		reverseImage.SetActive(false);
 		noLenseImage.SetActive(false);
+		// Show Reveal Particles and Outlines
+		particleAndOutlineManagerScript.DisplayRevealParticles();
+		particleAndOutlineManagerScript.DisplayRevealOutlines();
+		// Hide the other Particles and Outlines
+		particleAndOutlineManagerScript.HideRealityParticles();
+		particleAndOutlineManagerScript.HideRealityOutlines();
+		particleAndOutlineManagerScript.HideReverseParticles();
+		particleAndOutlineManagerScript.HideReverseOutlines();
 	}
 	private void GreenTint() {
 		Color imageColour;
@@ -46,6 +56,14 @@ public class SwitchLens : MonoBehaviour {
 		realityImage.SetActive(false);
 		reverseImage.SetActive(true);
 		noLenseImage.SetActive(false);
+		// Show Reverse Particles and Outlines
+		particleAndOutlineManagerScript.DisplayReverseParticles();
+		particleAndOutlineManagerScript.DisplayReverseOutlines();
+		// Hide the other Particles and Outlines
+		particleAndOutlineManagerScript.HideRealityParticles();
+		particleAndOutlineManagerScript.HideRealityOutlines();
+		particleAndOutlineManagerScript.HideRevealParticles();
+		particleAndOutlineManagerScript.HideRevealOutlines();
 	}
 	private void BlueTint() {
 		Color imageColour;
@@ -59,6 +77,14 @@ public class SwitchLens : MonoBehaviour {
 		realityImage.SetActive(true);
 		reverseImage.SetActive(false);
 		noLenseImage.SetActive(false);
+		// Show Reality Particles and Outlines
+		particleAndOutlineManagerScript.DisplayRealityParticles();
+		particleAndOutlineManagerScript.DisplayRealityOutlines();
+		// Hide the other Particles and Outlines
+		particleAndOutlineManagerScript.HideReverseParticles();
+		particleAndOutlineManagerScript.HideReverseOutlines();
+		particleAndOutlineManagerScript.HideRevealParticles();
+		particleAndOutlineManagerScript.HideRevealOutlines();
 	}
 	private void NoLensTint() {
 		lensTintImage.enabled = false;
@@ -66,6 +92,13 @@ public class SwitchLens : MonoBehaviour {
 		realityImage.SetActive(false);
 		reverseImage.SetActive(false);
 		noLenseImage.SetActive(true);
+		// Hide all Lens Particles and Outlines
+		particleAndOutlineManagerScript.HideRevealParticles();
+		particleAndOutlineManagerScript.HideRevealOutlines();
+		particleAndOutlineManagerScript.HideReverseParticles();
+		particleAndOutlineManagerScript.HideReverseOutlines();
+		particleAndOutlineManagerScript.HideRealityParticles();
+		particleAndOutlineManagerScript.HideRealityOutlines();
 	}
 	public void OnSwapLens() {
 		Lens.LensList PreviousLens = CurrentLens;

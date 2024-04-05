@@ -1370,6 +1370,7 @@ GameObject:
   - component: {fileID: 814349879813893750}
   - component: {fileID: 1742710910101886075}
   - component: {fileID: 309169824190691696}
+  - component: {fileID: 5866565830981890536}
   - component: {fileID: 5240197136846380840}
   - component: {fileID: 7602318349115671675}
   m_Layer: 9
@@ -1524,6 +1525,7 @@ MonoBehaviour:
   reverseImage: {fileID: 8592597544887620023}
   noLenseImage: {fileID: 1149779350100806378}
   CurrentLens: -1
+  particleAndOutlineManagerScript: {fileID: 0}
 --- !u!114 &814349879813893750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1619,6 +1621,24 @@ MonoBehaviour:
   rightHandRayInteractor: {fileID: 1333975717801540413}
   reversibleObjectsList: []
   swapLensScript: {fileID: 2500310390231039590}
+--- !u!114 &5866565830981890536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850729303473239665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 336435bb9f0af5a4f8414730f7a2344d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  revealParticlesList: []
+  realityParticlesList: []
+  reverseParticlesList: []
+  revealOutlinesList: []
+  realityOutlinesList: []
+  reverseOutlinesList: []
 --- !u!82 &5240197136846380840
 AudioSource:
   m_ObjectHideFlags: 0
