@@ -743,15 +743,6 @@ public partial class @XRIInputActions: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""ToggleSprint"",
-                    ""type"": ""Button"",
-                    ""id"": ""898a1ab7-26ff-4d7d-a6d5-76489f70b5d4"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
                     ""name"": ""TagReversibleObject"",
                     ""type"": ""Button"",
                     ""id"": ""69604584-b052-4666-a243-f4d71ee543f5"",
@@ -924,28 +915,6 @@ public partial class @XRIInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": ""Generic XR Controller"",
                     ""action"": ""SwapLens"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""9695d4b9-1ad8-466e-8bda-d2d292dba546"",
-                    ""path"": ""<XRInputV1::Oculus::OculusTouchControllerOpenXR>{LeftHand}/thumbstickclicked"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Generic XR Controller"",
-                    ""action"": ""ToggleSprint"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""c9382cbe-5600-4d96-ad9f-4fa01f22bb7f"",
-                    ""path"": ""<XRController>{LeftHand}/primary2DAxisClick"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Generic XR Controller"",
-                    ""action"": ""ToggleSprint"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -1532,15 +1501,6 @@ public partial class @XRIInputActions: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""Jump"",
-                    ""type"": ""Button"",
-                    ""id"": ""9eb419aa-c720-4772-81be-1f14d4d61fa0"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
                     ""name"": ""TagReversibleObject"",
                     ""type"": ""Button"",
                     ""id"": ""1a83cf73-f418-41a9-9865-f12984112dc7"",
@@ -1691,17 +1651,6 @@ public partial class @XRIInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": ""Generic XR Controller"",
                     ""action"": ""UI Scroll"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""6d6546b8-7a8e-47eb-a145-75cd239188d8"",
-                    ""path"": ""<XRController>{RightHand}/primaryButton"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Generic XR Controller"",
-                    ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -2449,7 +2398,6 @@ public partial class @XRIInputActions: IInputActionCollection2, IDisposable
         m_XRILeftHandInteraction_TranslateAnchor = m_XRILeftHandInteraction.FindAction("Translate Anchor", throwIfNotFound: true);
         m_XRILeftHandInteraction_ToggleLensWheel = m_XRILeftHandInteraction.FindAction("ToggleLensWheel", throwIfNotFound: true);
         m_XRILeftHandInteraction_SwapLens = m_XRILeftHandInteraction.FindAction("SwapLens", throwIfNotFound: true);
-        m_XRILeftHandInteraction_ToggleSprint = m_XRILeftHandInteraction.FindAction("ToggleSprint", throwIfNotFound: true);
         m_XRILeftHandInteraction_TagReversibleObject = m_XRILeftHandInteraction.FindAction("TagReversibleObject", throwIfNotFound: true);
         // XRI LeftHand Locomotion
         m_XRILeftHandLocomotion = asset.FindActionMap("XRI LeftHand Locomotion", throwIfNotFound: true);
@@ -2485,7 +2433,6 @@ public partial class @XRIInputActions: IInputActionCollection2, IDisposable
         m_XRIRightHandInteraction_UIScroll = m_XRIRightHandInteraction.FindAction("UI Scroll", throwIfNotFound: true);
         m_XRIRightHandInteraction_RotateAnchor = m_XRIRightHandInteraction.FindAction("Rotate Anchor", throwIfNotFound: true);
         m_XRIRightHandInteraction_TranslateAnchor = m_XRIRightHandInteraction.FindAction("Translate Anchor", throwIfNotFound: true);
-        m_XRIRightHandInteraction_Jump = m_XRIRightHandInteraction.FindAction("Jump", throwIfNotFound: true);
         m_XRIRightHandInteraction_TagReversibleObject = m_XRIRightHandInteraction.FindAction("TagReversibleObject", throwIfNotFound: true);
         // XRI RightHand Locomotion
         m_XRIRightHandLocomotion = asset.FindActionMap("XRI RightHand Locomotion", throwIfNotFound: true);
@@ -2807,7 +2754,6 @@ public partial class @XRIInputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_XRILeftHandInteraction_TranslateAnchor;
     private readonly InputAction m_XRILeftHandInteraction_ToggleLensWheel;
     private readonly InputAction m_XRILeftHandInteraction_SwapLens;
-    private readonly InputAction m_XRILeftHandInteraction_ToggleSprint;
     private readonly InputAction m_XRILeftHandInteraction_TagReversibleObject;
     public struct XRILeftHandInteractionActions
     {
@@ -2824,7 +2770,6 @@ public partial class @XRIInputActions: IInputActionCollection2, IDisposable
         public InputAction @TranslateAnchor => m_Wrapper.m_XRILeftHandInteraction_TranslateAnchor;
         public InputAction @ToggleLensWheel => m_Wrapper.m_XRILeftHandInteraction_ToggleLensWheel;
         public InputAction @SwapLens => m_Wrapper.m_XRILeftHandInteraction_SwapLens;
-        public InputAction @ToggleSprint => m_Wrapper.m_XRILeftHandInteraction_ToggleSprint;
         public InputAction @TagReversibleObject => m_Wrapper.m_XRILeftHandInteraction_TagReversibleObject;
         public InputActionMap Get() { return m_Wrapper.m_XRILeftHandInteraction; }
         public void Enable() { Get().Enable(); }
@@ -2868,9 +2813,6 @@ public partial class @XRIInputActions: IInputActionCollection2, IDisposable
             @SwapLens.started += instance.OnSwapLens;
             @SwapLens.performed += instance.OnSwapLens;
             @SwapLens.canceled += instance.OnSwapLens;
-            @ToggleSprint.started += instance.OnToggleSprint;
-            @ToggleSprint.performed += instance.OnToggleSprint;
-            @ToggleSprint.canceled += instance.OnToggleSprint;
             @TagReversibleObject.started += instance.OnTagReversibleObject;
             @TagReversibleObject.performed += instance.OnTagReversibleObject;
             @TagReversibleObject.canceled += instance.OnTagReversibleObject;
@@ -2911,9 +2853,6 @@ public partial class @XRIInputActions: IInputActionCollection2, IDisposable
             @SwapLens.started -= instance.OnSwapLens;
             @SwapLens.performed -= instance.OnSwapLens;
             @SwapLens.canceled -= instance.OnSwapLens;
-            @ToggleSprint.started -= instance.OnToggleSprint;
-            @ToggleSprint.performed -= instance.OnToggleSprint;
-            @ToggleSprint.canceled -= instance.OnToggleSprint;
             @TagReversibleObject.started -= instance.OnTagReversibleObject;
             @TagReversibleObject.performed -= instance.OnTagReversibleObject;
             @TagReversibleObject.canceled -= instance.OnTagReversibleObject;
@@ -3175,7 +3114,6 @@ public partial class @XRIInputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_XRIRightHandInteraction_UIScroll;
     private readonly InputAction m_XRIRightHandInteraction_RotateAnchor;
     private readonly InputAction m_XRIRightHandInteraction_TranslateAnchor;
-    private readonly InputAction m_XRIRightHandInteraction_Jump;
     private readonly InputAction m_XRIRightHandInteraction_TagReversibleObject;
     public struct XRIRightHandInteractionActions
     {
@@ -3190,7 +3128,6 @@ public partial class @XRIInputActions: IInputActionCollection2, IDisposable
         public InputAction @UIScroll => m_Wrapper.m_XRIRightHandInteraction_UIScroll;
         public InputAction @RotateAnchor => m_Wrapper.m_XRIRightHandInteraction_RotateAnchor;
         public InputAction @TranslateAnchor => m_Wrapper.m_XRIRightHandInteraction_TranslateAnchor;
-        public InputAction @Jump => m_Wrapper.m_XRIRightHandInteraction_Jump;
         public InputAction @TagReversibleObject => m_Wrapper.m_XRIRightHandInteraction_TagReversibleObject;
         public InputActionMap Get() { return m_Wrapper.m_XRIRightHandInteraction; }
         public void Enable() { Get().Enable(); }
@@ -3228,9 +3165,6 @@ public partial class @XRIInputActions: IInputActionCollection2, IDisposable
             @TranslateAnchor.started += instance.OnTranslateAnchor;
             @TranslateAnchor.performed += instance.OnTranslateAnchor;
             @TranslateAnchor.canceled += instance.OnTranslateAnchor;
-            @Jump.started += instance.OnJump;
-            @Jump.performed += instance.OnJump;
-            @Jump.canceled += instance.OnJump;
             @TagReversibleObject.started += instance.OnTagReversibleObject;
             @TagReversibleObject.performed += instance.OnTagReversibleObject;
             @TagReversibleObject.canceled += instance.OnTagReversibleObject;
@@ -3265,9 +3199,6 @@ public partial class @XRIInputActions: IInputActionCollection2, IDisposable
             @TranslateAnchor.started -= instance.OnTranslateAnchor;
             @TranslateAnchor.performed -= instance.OnTranslateAnchor;
             @TranslateAnchor.canceled -= instance.OnTranslateAnchor;
-            @Jump.started -= instance.OnJump;
-            @Jump.performed -= instance.OnJump;
-            @Jump.canceled -= instance.OnJump;
             @TagReversibleObject.started -= instance.OnTagReversibleObject;
             @TagReversibleObject.performed -= instance.OnTagReversibleObject;
             @TagReversibleObject.canceled -= instance.OnTagReversibleObject;
@@ -3557,7 +3488,6 @@ public partial class @XRIInputActions: IInputActionCollection2, IDisposable
         void OnTranslateAnchor(InputAction.CallbackContext context);
         void OnToggleLensWheel(InputAction.CallbackContext context);
         void OnSwapLens(InputAction.CallbackContext context);
-        void OnToggleSprint(InputAction.CallbackContext context);
         void OnTagReversibleObject(InputAction.CallbackContext context);
     }
     public interface IXRILeftHandLocomotionActions
@@ -3596,7 +3526,6 @@ public partial class @XRIInputActions: IInputActionCollection2, IDisposable
         void OnUIScroll(InputAction.CallbackContext context);
         void OnRotateAnchor(InputAction.CallbackContext context);
         void OnTranslateAnchor(InputAction.CallbackContext context);
-        void OnJump(InputAction.CallbackContext context);
         void OnTagReversibleObject(InputAction.CallbackContext context);
     }
     public interface IXRIRightHandLocomotionActions

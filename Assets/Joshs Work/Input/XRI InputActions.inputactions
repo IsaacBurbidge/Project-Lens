@@ -721,15 +721,6 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "ToggleSprint",
-                    "type": "Button",
-                    "id": "898a1ab7-26ff-4d7d-a6d5-76489f70b5d4",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "TagReversibleObject",
                     "type": "Button",
                     "id": "69604584-b052-4666-a243-f4d71ee543f5",
@@ -902,28 +893,6 @@
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "SwapLens",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "9695d4b9-1ad8-466e-8bda-d2d292dba546",
-                    "path": "<XRInputV1::Oculus::OculusTouchControllerOpenXR>{LeftHand}/thumbstickclicked",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Generic XR Controller",
-                    "action": "ToggleSprint",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "c9382cbe-5600-4d96-ad9f-4fa01f22bb7f",
-                    "path": "<XRController>{LeftHand}/primary2DAxisClick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Generic XR Controller",
-                    "action": "ToggleSprint",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -1510,15 +1479,6 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Jump",
-                    "type": "Button",
-                    "id": "9eb419aa-c720-4772-81be-1f14d4d61fa0",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "TagReversibleObject",
                     "type": "Button",
                     "id": "1a83cf73-f418-41a9-9865-f12984112dc7",
@@ -1669,17 +1629,6 @@
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "UI Scroll",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "6d6546b8-7a8e-47eb-a145-75cd239188d8",
-                    "path": "<XRController>{RightHand}/primaryButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Generic XR Controller",
-                    "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
