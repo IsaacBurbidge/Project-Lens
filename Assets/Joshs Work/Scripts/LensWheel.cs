@@ -2,14 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
+using UnityEngine.XR.Interaction.Toolkit.UI;
 
 public class LensWheel : MonoBehaviour {
     // Player Input
     [SerializeField]
     private InputActionProperty toggleLensWheelButton;
+	[SerializeField]
+	private LensWheelAnimationManager lensWheelAnimationManagerScript;
 
-    // Lens Wheel Variables
-    private bool isLensWheelVisible = false;
+	// Lens Wheel Variables
+	private bool isLensWheelVisible = false;
     [SerializeField]
     private SwitchLens swapLensScript;
     [SerializeField]
@@ -18,22 +22,28 @@ public class LensWheel : MonoBehaviour {
     void Start() {
         // Hide Lens Wheel on Start
         isLensWheelVisible = false;
-        lensWheelUI.SetActive(false);
+        lensWheelUI.GetComponent<Canvas>().enabled = false;
+        lensWheelUI.GetComponent<CanvasScaler>().enabled = false;
+        lensWheelUI.GetComponent<GraphicRaycaster>().enabled = false;
+        lensWheelUI.GetComponent<TrackedDeviceGraphicRaycaster>().enabled = false;
     }
 
     void Update() {
         if (toggleLensWheelButton.action.WasPressedThisFrame() == true) {
             ToggleLensWheel();
         }
-    }
+	}
 
     // Press X Button on Left XR Controller to toggle Lens Wheel On/Off
     private void ToggleLensWheel() {
         // Toggle On
         if (isLensWheelVisible == false) {
-            // Show Lens Wheel UI
-            lensWheelUI.SetActive(true);
-            isLensWheelVisible = true;
+			// Show Lens Wheel UI
+			lensWheelUI.GetComponent<Canvas>().enabled = true;
+			lensWheelUI.GetComponent<CanvasScaler>().enabled = true;
+			lensWheelUI.GetComponent<GraphicRaycaster>().enabled = true;
+			lensWheelUI.GetComponent<TrackedDeviceGraphicRaycaster>().enabled = true;
+			isLensWheelVisible = true;
             // Slow down time
             Time.timeScale = 0.15f;
             // Change to LensWheel state to ensure that no objects can be tagged as reversible when interacting with the Lens Wheel UI
@@ -41,9 +51,12 @@ public class LensWheel : MonoBehaviour {
         }
         // Toggle Off
         else if (isLensWheelVisible == true) {
-            // Hide Lens Wheel UI
-            lensWheelUI.SetActive(false);
-            isLensWheelVisible = false;
+			// Hide Lens Wheel UI
+			lensWheelUI.GetComponent<Canvas>().enabled = false;
+			lensWheelUI.GetComponent<CanvasScaler>().enabled = false;
+			lensWheelUI.GetComponent<GraphicRaycaster>().enabled = false;
+			lensWheelUI.GetComponent<TrackedDeviceGraphicRaycaster>().enabled = false;
+			isLensWheelVisible = false;
             // Revert to normal time
             Time.timeScale = 1.0f;
             // Revert back to Gameplay state
@@ -53,15 +66,19 @@ public class LensWheel : MonoBehaviour {
 
     // Sets the Current Lens Enum to the chosen Lens [REVEAL | REVERSE | REALITY | NO LENS]
     public void ClickRevealLensBtn() {
-        swapLensScript.LensWheelSwap(Lens.LensList.REVEAL);
+		lensWheelAnimationManagerScript.PlayLensWheelAnimation();
+		swapLensScript.LensWheelSwap(Lens.LensList.REVEAL);
     }
     public void ClickReverseLensBtn() {
-        swapLensScript.LensWheelSwap(Lens.LensList.REVERSE);
+		lensWheelAnimationManagerScript.PlayLensWheelAnimation();
+		swapLensScript.LensWheelSwap(Lens.LensList.REVERSE);
     }
     public void ClickRealityLensBtn() {
-        swapLensScript.LensWheelSwap(Lens.LensList.REALITY);
+		lensWheelAnimationManagerScript.PlayLensWheelAnimation();
+		swapLensScript.LensWheelSwap(Lens.LensList.REALITY);
     }
     public void ClickNoLensBtn() {
-        swapLensScript.LensWheelSwap(Lens.LensList.NONE);
+		lensWheelAnimationManagerScript.PlayLensWheelAnimation();
+		swapLensScript.LensWheelSwap(Lens.LensList.NONE);
     }
 }

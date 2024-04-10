@@ -19,6 +19,8 @@ public class SwitchLens : MonoBehaviour {
 	Lens[] LensItems;
 	[SerializeField]
 	private ParticleAndOutlineManager particleAndOutlineManagerScript;
+	[SerializeField]
+	private LensWheelAnimationManager lensWheelAnimationManagerScript;
 
 	private void Start() {
 		LensItems = (Lens[])FindObjectsOfType(typeof(Lens));
@@ -102,6 +104,7 @@ public class SwitchLens : MonoBehaviour {
 	}
 	public void OnSwapLens() {
 		Lens.LensList PreviousLens = CurrentLens;
+
 		switch (CurrentLens) {
 			case Lens.LensList.NONE: {
 					CurrentLens = Lens.LensList.REVEAL;
@@ -135,6 +138,7 @@ public class SwitchLens : MonoBehaviour {
 	}
 
 	public void LensWheelSwap(Lens.LensList NextLens) {
+		lensWheelAnimationManagerScript.previousLens = ((int)CurrentLens);
 		Lens.LensList PreviousLens = CurrentLens;
 		CurrentLens = NextLens;
 
