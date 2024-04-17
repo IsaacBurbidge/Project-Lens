@@ -1704,17 +1704,6 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
---- !u!114 &1267694845 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1832392900573825825, guid: 58bc2aa1d35b0a047944d07f3fc3976e, type: 3}
-  m_PrefabInstance: {fileID: 1790979178}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2cef50ae58ceaa4d966e764198e02d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &1267694846 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 1855904539210084696, guid: 58bc2aa1d35b0a047944d07f3fc3976e, type: 3}
@@ -3619,49 +3608,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 475190063299709879, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 475190063299709879, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 475190063299709879, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 475190063299709879, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 475190063299709879, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 475190063299709879, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1933139855518872722, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
       propertyPath: m_Name
       value: VRCharacterController
       objectReference: {fileID: 0}
-    - target: {fileID: 4569495065568978070, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
-      propertyPath: leverScript
-      value: 
-      objectReference: {fileID: 1267694845}
-    - target: {fileID: 4569495065568978070, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
-      propertyPath: firstDoorAnimator
-      value: 
-      objectReference: {fileID: 1267694846}
     - target: {fileID: 5528989802318372071, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5528989802318372071, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 6.14
       objectReference: {fileID: 0}
     - target: {fileID: 5528989802318372071, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
       propertyPath: m_LocalPosition.z

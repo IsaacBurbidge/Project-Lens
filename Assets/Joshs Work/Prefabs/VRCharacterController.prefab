@@ -1080,7 +1080,6 @@ GameObject:
   - component: {fileID: 1742710910101886075}
   - component: {fileID: 309169824190691696}
   - component: {fileID: 875190321185326649}
-  - component: {fileID: 5749301351802729604}
   - component: {fileID: 5866565830981890536}
   - component: {fileID: 5240197136846380840}
   - component: {fileID: 7602318349115671675}
@@ -1351,21 +1350,6 @@ MonoBehaviour:
   switchLensScript: {fileID: 2500310390231039590}
   previousLens: -1
   Animator: {fileID: 4977052666065334143}
---- !u!114 &5749301351802729604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1850729303473239665}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c19aed2164124545ad92a9e2219c84e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  switchLensScript: {fileID: 2500310390231039590}
-  previousLens: -1
-  Animator: {fileID: 4977052666065334143}
 --- !u!114 &5866565830981890536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1378,16 +1362,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 336435bb9f0af5a4f8414730f7a2344d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  revealParticlesList:
-  - {fileID: 0}
-  reverseParticlesList:
-  - {fileID: 0}
-  realityParticlesList:
-  - {fileID: 0}
+  revealParticlesList: []
+  reverseParticlesList: []
+  realityParticlesList: []
   revealOutlinesList: []
-  reverseOutlinesList:
-  - {fileID: 0}
-  - {fileID: 0}
+  reverseOutlinesList: []
   realityOutlinesList: []
 --- !u!82 &5240197136846380840
 AudioSource:
@@ -5337,6 +5316,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Right Direct Interactor
       objectReference: {fileID: 0}
+    - target: {fileID: 8841706926471734270, guid: 2fd3e07afe5b461490fb8e314976b1b0, type: 3}
+      propertyPath: m_TagString
+      value: RightHand
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6184,6 +6167,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: hand_Right
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d093909cbc15e094887b5c3c77cf1b9f, type: 3}
+      propertyPath: m_TagString
+      value: RightHand
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6265,6 +6252,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f61675086fb8aaa45bb724436feb7bd0, type: 3}
       propertyPath: m_Name
       value: player-hand-left
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f61675086fb8aaa45bb724436feb7bd0, type: 3}
+      propertyPath: m_TagString
+      value: LeftHand
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6598,6 +6589,10 @@ PrefabInstance:
     - target: {fileID: 1787346994484839025, guid: ad818c36731146e994540a1896ad8f24, type: 3}
       propertyPath: m_Name
       value: Left Ray Interactor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1787346994484839025, guid: ad818c36731146e994540a1896ad8f24, type: 3}
+      propertyPath: m_TagString
+      value: LeftHand
       objectReference: {fileID: 0}
     - target: {fileID: 4924506573850889901, guid: ad818c36731146e994540a1896ad8f24, type: 3}
       propertyPath: m_LineOriginTransform

@@ -17047,6 +17047,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 747945347205030361, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1933139855518872722, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
       propertyPath: m_Name
       value: VRCharacterController
@@ -17091,18 +17095,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5866565830981890536, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
-      propertyPath: revealParticlesList.Array.data[0]
+    - target: {fileID: 5574557437244873971, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6391938059624792207, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6689845195600213875, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
+      propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 1826871211}
-    - target: {fileID: 5866565830981890536, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
-      propertyPath: realityParticlesList.Array.data[0]
-      value: 
-      objectReference: {fileID: 1046389526}
-    - target: {fileID: 5866565830981890536, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
-      propertyPath: reverseParticlesList.Array.data[0]
-      value: 
-      objectReference: {fileID: 1218453022}
+      objectReference: {fileID: 9100000, guid: 0284ecac7be7e2d409126f62358d744b, type: 2}
+    - target: {fileID: 6738467614032496349, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6738855478305910957, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6908349978450026856, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7602318349115671675, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
       propertyPath: uiPromptTriggers.Array.data[0]
       value: 
@@ -34133,6 +34149,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bridge (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a518c093633e9b34ea97e2093cc39bb2, type: 3}
+      propertyPath: m_TagString
+      value: Reverse Lens
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -40974,6 +40994,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bridge (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a518c093633e9b34ea97e2093cc39bb2, type: 3}
+      propertyPath: m_TagString
+      value: Reverse Lens
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -42692,7 +42716,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e8282128884c5e46bab14563d098f7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VisibleLens: 0
+  VisibleLens: 1
   Animator: {fileID: 1112381547}
 --- !u!1001 &1116148141
 PrefabInstance:
@@ -65739,6 +65763,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ReverseParticles
       objectReference: {fileID: 0}
+    - target: {fileID: 2367120070098342159, guid: 6f60ce9f20112924d8cc450baffd70f2, type: 3}
+      propertyPath: m_TagString
+      value: Reverse Lens
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -81539,6 +81567,10 @@ PrefabInstance:
     - target: {fileID: 2367120070098342159, guid: 6f60ce9f20112924d8cc450baffd70f2, type: 3}
       propertyPath: m_Name
       value: ReverseParticles
+      objectReference: {fileID: 0}
+    - target: {fileID: 2367120070098342159, guid: 6f60ce9f20112924d8cc450baffd70f2, type: 3}
+      propertyPath: m_TagString
+      value: Reverse Lens
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
