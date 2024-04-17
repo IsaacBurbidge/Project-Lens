@@ -820,6 +820,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 875190321185326649}
+        m_TargetAssemblyTypeName: LensWheelAnimationManager, Assembly-CSharp
+        m_MethodName: PlayLensWheelAnimation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 8592597544887620023}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -1067,6 +1079,7 @@ GameObject:
   - component: {fileID: 814349879813893750}
   - component: {fileID: 1742710910101886075}
   - component: {fileID: 309169824190691696}
+  - component: {fileID: 875190321185326649}
   - component: {fileID: 5749301351802729604}
   - component: {fileID: 5866565830981890536}
   - component: {fileID: 5240197136846380840}
@@ -1224,7 +1237,7 @@ MonoBehaviour:
   noLenseImage: {fileID: 1149779350100806378}
   CurrentLens: -1
   particleAndOutlineManagerScript: {fileID: 5866565830981890536}
-  lensWheelAnimationManagerScript: {fileID: 5749301351802729604}
+  lensWheelAnimationManagerScript: {fileID: 875190321185326649}
 --- !u!114 &814349879813893750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1249,7 +1262,7 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: 576961918293843635, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  lensWheelAnimationManagerScript: {fileID: 5749301351802729604}
+  lensWheelAnimationManagerScript: {fileID: 875190321185326649}
   switchLensScript: {fileID: 2500310390231039590}
   swapLensScript: {fileID: 2500310390231039590}
 --- !u!114 &1742710910101886075
@@ -1276,7 +1289,7 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: -7785844276129357090, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  lensWheelAnimationManagerScript: {fileID: 5749301351802729604}
+  lensWheelAnimationManagerScript: {fileID: 875190321185326649}
   swapLensScript: {fileID: 2500310390231039590}
   lensWheelUI: {fileID: 4812024328711780589}
 --- !u!114 &309169824190691696
@@ -1323,6 +1336,21 @@ MonoBehaviour:
   rightHandRayInteractor: {fileID: 1333975717801540413}
   reversibleObjectsList: []
   swapLensScript: {fileID: 2500310390231039590}
+--- !u!114 &875190321185326649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850729303473239665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c19aed2164124545ad92a9e2219c84e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  switchLensScript: {fileID: 2500310390231039590}
+  previousLens: -1
+  Animator: {fileID: 4977052666065334143}
 --- !u!114 &5749301351802729604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1800,6 +1828,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1742710910101886075}
         m_TargetAssemblyTypeName: LensWheel, Assembly-CSharp
         m_MethodName: ClickRealityLensBtn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 875190321185326649}
+        m_TargetAssemblyTypeName: LensWheelAnimationManager, Assembly-CSharp
+        m_MethodName: PlayLensWheelAnimation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2483,6 +2523,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1742710910101886075}
         m_TargetAssemblyTypeName: LensWheel, Assembly-CSharp
         m_MethodName: ClickNoLensBtn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 875190321185326649}
+        m_TargetAssemblyTypeName: LensWheelAnimationManager, Assembly-CSharp
+        m_MethodName: PlayLensWheelAnimation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4134,6 +4186,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 875190321185326649}
+        m_TargetAssemblyTypeName: LensWheelAnimationManager, Assembly-CSharp
+        m_MethodName: PlayLensWheelAnimation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 2044816487825086573}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -4933,12 +4997,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1742710910101886075}
     - target: {fileID: 7617166971536082056, guid: 6c2509c76b281144cb0099fc45f17a09, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 93.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 7617166971536082056, guid: 6c2509c76b281144cb0099fc45f17a09, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -6.7061768
       objectReference: {fileID: 0}
     - target: {fileID: 7617166971536082056, guid: 6c2509c76b281144cb0099fc45f17a09, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -69.400696
+      value: -65.8
       objectReference: {fileID: 0}
     - target: {fileID: 8340822526285138736, guid: 6c2509c76b281144cb0099fc45f17a09, type: 3}
       propertyPath: m_fontSize
