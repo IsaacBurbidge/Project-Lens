@@ -80,7 +80,18 @@ public class RealityLens : Lens {
 	}
 
 	private void OnTriggerEnter(Collider other) {
-		if(other.name == "Player") {
+		if (other.name == "Player") {
+			if (switchLensScript.CurrentLens == LensList.REALITY) {
+				CanSwapRoom = false;
+			}
+			else {
+				CanSwapRoom = false;
+			}
+		}
+	}
+
+	private void OnTriggerStay(Collider other) {
+		if (other.name == "Player") {
 			if (switchLensScript.CurrentLens == LensList.REALITY) {
 				CanSwapRoom = false;
 			}
@@ -93,11 +104,13 @@ public class RealityLens : Lens {
 	private void OnTriggerExit(Collider other) {
 		if (switchLensScript.CurrentLens == LensList.REALITY) {
 			Room2.SetActive(true);
+			Room1.SetActive(false);
 			ActiveRoom = Rooms.Room2;
 			CanSwapRoom = true;
 		}
 		else if(switchLensScript.CurrentLens != LensList.REALITY) {
 			Room2.SetActive(false);
+			Room1.SetActive(true);
 			ActiveRoom = Rooms.Room1;
 			CanSwapRoom = true;
 		}

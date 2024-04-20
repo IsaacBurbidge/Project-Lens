@@ -3935,6 +3935,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VRCharacterController
       objectReference: {fileID: 0}
+    - target: {fileID: 1994275511581117531, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
+      propertyPath: m_MoveSpeed
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2020760970474093441, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
       propertyPath: m_MaxRaycastDistance
       value: 100

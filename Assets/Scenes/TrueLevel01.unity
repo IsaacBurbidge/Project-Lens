@@ -17131,6 +17131,14 @@ PrefabInstance:
       propertyPath: uiPromptTriggers.Array.data[8]
       value: 
       objectReference: {fileID: 1618411819}
+    - target: {fileID: 8416469677849494089, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
+      propertyPath: isSprinting
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8416469677849494089, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
+      propertyPath: sprintButton.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
