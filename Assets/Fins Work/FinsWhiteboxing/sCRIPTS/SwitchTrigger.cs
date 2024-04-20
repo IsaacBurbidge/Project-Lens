@@ -15,6 +15,7 @@ public class SwitchTrigger : MonoBehaviour
         {
             AudioSource.PlayClipAtPoint(switchHitClip, transform.position);
             switchEvent.Invoke();
+            this.gameObject.SetActive(false);
         }
     }
 }

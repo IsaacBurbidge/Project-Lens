@@ -11,7 +11,7 @@ public class TriggerToggler : MonoBehaviour
     {
         if(other.CompareTag(triggerTag))
         {
-            Debug.Log("Triggered");
+            Debug.Log("Triggered"); 
             animator.SetTrigger(triggerName);
         }
     }
