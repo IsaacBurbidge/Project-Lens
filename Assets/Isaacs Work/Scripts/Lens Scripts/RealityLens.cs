@@ -36,6 +36,9 @@ public class RealityLens : Lens {
 					if (Room1 != null && Room1 != null) {
 						Room1.SetActive(false);
 						Room2.SetActive(true);
+						if (Room2.TryGetComponent(out MeshRenderer meshRenderer) == true) {
+								Room2.GetComponent<MeshRenderer>().enabled = true;
+						}
 						ActiveRoom = Rooms.Room2;
 					}
 					break;

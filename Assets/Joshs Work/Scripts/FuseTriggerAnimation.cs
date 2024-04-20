@@ -7,13 +7,15 @@ public class FuseTriggerAnimation : MonoBehaviour {
 	private Animator firstDoorAnimator;
 	[SerializeField]
 	private Animator secondDoorAnimator;
-	public static bool isFirstDoorOpen = false;
+	public bool isFirstDoorOpen = false;
 	[SerializeField]
 	private Material fuseMaterial;
 	[SerializeField]
 	private GameObject leftFuseUIPromptObject;
 	[SerializeField]
 	private GameObject middleFuseUIPromptObject;
+	[SerializeField]
+	private GameObject otherFuseObject;
 	private void Start () {
 		isFirstDoorOpen = false;
 
@@ -23,6 +25,7 @@ public class FuseTriggerAnimation : MonoBehaviour {
 			other.gameObject.GetComponentInParent<MeshRenderer>().material = fuseMaterial;
 			firstDoorAnimator.SetBool("openDoor", true);
 			isFirstDoorOpen = true;
+			otherFuseObject.GetComponent<FuseTriggerAnimation>().isFirstDoorOpen = true;
 
 			if(other.gameObject.name == "LeftFuse_Trigger") {
 				other.gameObject.GetComponentInChildren<BoxCollider>().enabled = false;
@@ -34,7 +37,6 @@ public class FuseTriggerAnimation : MonoBehaviour {
 				middleFuseUIPromptObject.GetComponent<UIPromptTextToShow>().uiPromptText = "This fuse has already been activated...";
 			}
 			gameObject.SetActive(false);
-			// Destroy(gameObject);
 		}
 		else if (isFirstDoorOpen == true && other.gameObject.name == "LeftFuse_Trigger" || other.gameObject.name == "MiddleFuse_Trigger") {
 			other.gameObject.GetComponentInParent<MeshRenderer>().material = fuseMaterial;
@@ -51,7 +53,6 @@ public class FuseTriggerAnimation : MonoBehaviour {
 				middleFuseUIPromptObject.GetComponent<UIPromptTextToShow>().uiPromptText = "This fuse has already been activated...";
 			}
 			gameObject.SetActive(false);
-			//Destroy(gameObject);
 		}
 	}
 	private void Update() {
