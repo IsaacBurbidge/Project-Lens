@@ -926,9 +926,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 3206752325525554914}
-  m_TurnSpeed: 80
+  m_TurnSpeed: 150
   m_LeftHandTurnAction:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Left Hand Turn
       m_Type: 0
@@ -2241,7 +2241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 3206752325525554914}
-  m_MoveSpeed: 7
+  m_MoveSpeed: 5
   m_EnableStrafe: 1
   m_EnableFly: 0
   m_UseGravity: 1
@@ -2260,7 +2260,7 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 6972639530819350904, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_RightHandMoveAction:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Right Hand Move
       m_Type: 0
@@ -2289,7 +2289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprintButton:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Sprint Button
       m_Type: 0
@@ -2300,7 +2300,7 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: -1611224075776710897, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  isSprinting: 1
+  isSprinting: 0
   continuousMoveProviderBase: {fileID: 1994275511581117531}
 --- !u!1 &5692724457719851055
 GameObject:
@@ -4239,7 +4239,7 @@ PrefabInstance:
       objectReference: {fileID: 331244393127775695}
     - target: {fileID: 664489801923019586, guid: 2fd3e07afe5b461490fb8e314976b1b0, type: 3}
       propertyPath: m_SelectActionTrigger
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 664489801923019586, guid: 2fd3e07afe5b461490fb8e314976b1b0, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
@@ -5176,6 +5176,10 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 331244393127775695}
+    - target: {fileID: 664489801923019586, guid: 2fd3e07afe5b461490fb8e314976b1b0, type: 3}
+      propertyPath: m_SelectActionTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 664489801923019586, guid: 2fd3e07afe5b461490fb8e314976b1b0, type: 3}
       propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -6414,6 +6418,18 @@ PrefabInstance:
       value: Right Ray Interactor
       objectReference: {fileID: 0}
     - target: {fileID: 4924506573850889901, guid: ad818c36731146e994540a1896ad8f24, type: 3}
+      propertyPath: m_LineLength
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924506573850889901, guid: ad818c36731146e994540a1896ad8f24, type: 3}
+      propertyPath: m_MinLineLength
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924506573850889901, guid: ad818c36731146e994540a1896ad8f24, type: 3}
+      propertyPath: m_SmoothMovement
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924506573850889901, guid: ad818c36731146e994540a1896ad8f24, type: 3}
       propertyPath: m_LineOriginTransform
       value: 
       objectReference: {fileID: 7496590020961349438}
@@ -6605,6 +6621,18 @@ PrefabInstance:
     - target: {fileID: 1787346994484839025, guid: ad818c36731146e994540a1896ad8f24, type: 3}
       propertyPath: m_TagString
       value: LeftHand
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924506573850889901, guid: ad818c36731146e994540a1896ad8f24, type: 3}
+      propertyPath: m_LineLength
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924506573850889901, guid: ad818c36731146e994540a1896ad8f24, type: 3}
+      propertyPath: m_MinLineLength
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924506573850889901, guid: ad818c36731146e994540a1896ad8f24, type: 3}
+      propertyPath: m_SmoothMovement
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4924506573850889901, guid: ad818c36731146e994540a1896ad8f24, type: 3}
       propertyPath: m_LineOriginTransform

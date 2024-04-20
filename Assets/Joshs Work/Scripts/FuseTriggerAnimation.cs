@@ -21,7 +21,7 @@ public class FuseTriggerAnimation : MonoBehaviour {
 
 	}
 	private void OnTriggerStay(Collider other) {
-		if (isFirstDoorOpen == false && other.gameObject.name == "LeftFuse_Trigger" || other.gameObject.name == "MiddleFuse_Trigger") {
+		if (isFirstDoorOpen == false && other.gameObject.name == "LeftFuse_Trigger" || isFirstDoorOpen == false && other.gameObject.name == "MiddleFuse_Trigger") {
 			other.gameObject.GetComponentInParent<MeshRenderer>().material = fuseMaterial;
 			firstDoorAnimator.SetBool("openDoor", true);
 			isFirstDoorOpen = true;
@@ -38,7 +38,7 @@ public class FuseTriggerAnimation : MonoBehaviour {
 			}
 			gameObject.SetActive(false);
 		}
-		else if (isFirstDoorOpen == true && other.gameObject.name == "LeftFuse_Trigger" || other.gameObject.name == "MiddleFuse_Trigger") {
+		else if (isFirstDoorOpen == true && other.gameObject.name == "LeftFuse_Trigger" || isFirstDoorOpen == true && other.gameObject.name == "MiddleFuse_Trigger") {
 			other.gameObject.GetComponentInParent<MeshRenderer>().material = fuseMaterial;
 			secondDoorAnimator.SetBool("openDoor", true);
 

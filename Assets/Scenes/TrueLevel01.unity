@@ -17057,7 +17057,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5528989802318372071, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.17
+      value: -0.239
       objectReference: {fileID: 0}
     - target: {fileID: 5528989802318372071, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -17065,7 +17065,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5528989802318372071, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -13.97
+      value: -15.203
       objectReference: {fileID: 0}
     - target: {fileID: 5528989802318372071, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -17131,14 +17131,6 @@ PrefabInstance:
       propertyPath: uiPromptTriggers.Array.data[8]
       value: 
       objectReference: {fileID: 1618411819}
-    - target: {fileID: 8416469677849494089, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
-      propertyPath: isSprinting
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8416469677849494089, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
-      propertyPath: sprintButton.m_UseReference
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -65266,7 +65258,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Kaboom
+          m_StringArgument: openDoor
           m_BoolArgument: 0
         m_CallState: 2
   prompt: I gotta place a fuse here...
@@ -83353,7 +83345,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -91126,6 +91118,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: button (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4152411669449896358, guid: 4c2476cb1f72f114fae51050fc7696fe, type: 3}
+      propertyPath: m_Height
+      value: 0.029114677
+      objectReference: {fileID: 0}
+    - target: {fileID: 4152411669449896358, guid: 4c2476cb1f72f114fae51050fc7696fe, type: 3}
+      propertyPath: m_Center.x
+      value: -6.0746847e-16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4152411669449896358, guid: 4c2476cb1f72f114fae51050fc7696fe, type: 3}
+      propertyPath: m_Center.y
+      value: 1.1680824e-16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4152411669449896358, guid: 4c2476cb1f72f114fae51050fc7696fe, type: 3}
+      propertyPath: m_Center.z
+      value: -0.01145239
+      objectReference: {fileID: 0}
     - target: {fileID: 5471455148831275490, guid: 4c2476cb1f72f114fae51050fc7696fe, type: 3}
       propertyPath: m_InteractionManager
       value: 
@@ -93567,6 +93575,22 @@ PrefabInstance:
     - target: {fileID: 2235960423815800229, guid: 4c2476cb1f72f114fae51050fc7696fe, type: 3}
       propertyPath: m_Name
       value: button
+      objectReference: {fileID: 0}
+    - target: {fileID: 4152411669449896358, guid: 4c2476cb1f72f114fae51050fc7696fe, type: 3}
+      propertyPath: m_Height
+      value: 0.03197787
+      objectReference: {fileID: 0}
+    - target: {fileID: 4152411669449896358, guid: 4c2476cb1f72f114fae51050fc7696fe, type: 3}
+      propertyPath: m_Center.x
+      value: -6.6082546e-16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4152411669449896358, guid: 4c2476cb1f72f114fae51050fc7696fe, type: 3}
+      propertyPath: m_Center.y
+      value: 1.1170721e-16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4152411669449896358, guid: 4c2476cb1f72f114fae51050fc7696fe, type: 3}
+      propertyPath: m_Center.z
+      value: -0.011882308
       objectReference: {fileID: 0}
     - target: {fileID: 5471455148831275490, guid: 4c2476cb1f72f114fae51050fc7696fe, type: 3}
       propertyPath: m_InteractionManager

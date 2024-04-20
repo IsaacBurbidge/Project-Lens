@@ -6312,7 +6312,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 5727281425797814915, guid: a4c5f33698f3e1e469ba4904361474c7, type: 3}
 --- !u!1001 &613469356
@@ -21921,11 +21921,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 475190063299709879, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.31700003
+      value: -0.31700027
       objectReference: {fileID: 0}
     - target: {fileID: 475190063299709879, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.8411903
+      value: -4.9257374
+      objectReference: {fileID: 0}
+    - target: {fileID: 475190063299709879, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.7010869
       objectReference: {fileID: 0}
     - target: {fileID: 489600090536358189, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
       propertyPath: m_Layer
@@ -22149,7 +22153,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5528989802318372071, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -62.4
+      value: 0.513
       objectReference: {fileID: 0}
     - target: {fileID: 5528989802318372071, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -23513,7 +23517,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7506450431380595266, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -405
+      value: -195
       objectReference: {fileID: 0}
     - target: {fileID: 7872910989912882502, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
       propertyPath: m_CullingMask.m_Bits
@@ -30146,7 +30150,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30358,7 +30362,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2128805850}
 --- !u!33 &1938080186
