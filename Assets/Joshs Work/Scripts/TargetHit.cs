@@ -8,7 +8,6 @@ public class TargetHit : MonoBehaviour {
 	[SerializeField]
 	private Material successMaterial;
 
-
 	private void OnTriggerEnter(Collider other) {
 		if (other.CompareTag("Ball")) {
 			Debug.Log("Triggered");

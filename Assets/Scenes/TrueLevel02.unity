@@ -123,6 +123,39 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &9428785
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9428786}
+  m_Layer: 0
+  m_Name: TargetPractice
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9428786
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9428785}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2102292916}
+  - {fileID: 653789133}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &10744670
 GameObject:
   m_ObjectHideFlags: 0
@@ -14754,12 +14787,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 653789129}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.9998242, z: -0, w: 0.018752526}
-  m_LocalPosition: {x: -0.027727893, y: 0.71930003, z: 0.07221129}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -9.405, y: 2.7873, z: 10.0028}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 2102292916}
+  m_Father: {fileID: 9428786}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &655531287
 Mesh:
@@ -41040,6 +41073,7 @@ GameObject:
   - component: {fileID: 1641740975}
   - component: {fileID: 1641740974}
   - component: {fileID: 1641740973}
+  - component: {fileID: 1641740978}
   m_Layer: 0
   m_Name: ThrowBall
   m_TagString: Ball
@@ -41328,6 +41362,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1641740978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641740971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &1643037858
 GameObject:
   m_ObjectHideFlags: 0
@@ -50771,6 +50823,7 @@ GameObject:
   - component: {fileID: 2102292917}
   - component: {fileID: 2102292918}
   - component: {fileID: 2102292919}
+  - component: {fileID: 2102292920}
   m_Layer: 0
   m_Name: Target
   m_TagString: Untagged
@@ -50864,13 +50917,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2102292911}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.9998242, z: 0, w: 0.018752526}
-  m_LocalPosition: {x: -9.43, y: 2.068, z: 10.076}
+  m_LocalRotation: {x: -0, y: -0.9998242, z: -0, w: 0.018752526}
+  m_LocalPosition: {x: -9.429, y: 2.068, z: 10.114}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 653789133}
-  m_Father: {fileID: 0}
+  m_Children: []
+  m_Father: {fileID: 9428786}
   m_LocalEulerAnglesHint: {x: 0, y: -177.851, z: 0}
 --- !u!64 &2102292917
 MeshCollider:
@@ -50930,6 +50982,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lightMeshRenderer: {fileID: 653789131}
   successMaterial: {fileID: 2100000, guid: 6d6fa61c24c64014e8417af8bcc38302, type: 2}
+--- !u!114 &2102292920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102292911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &2105960307
 GameObject:
   m_ObjectHideFlags: 0
@@ -52785,4 +52855,4 @@ SceneRoots:
   - {fileID: 1885796131}
   - {fileID: 841102504}
   - {fileID: 844703414}
-  - {fileID: 2102292916}
+  - {fileID: 9428786}
