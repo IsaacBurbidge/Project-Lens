@@ -1050,7 +1050,7 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: -5147874564222201205, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    m_Reference: {fileID: 0}
   characterController: {fileID: 2750023863714503419}
   isGrounded: 1
   groundedOffset: 0
@@ -1262,7 +1262,6 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 576961918293843635, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   lensWheelAnimationManagerScript: {fileID: 875190321185326649}
-  switchLensScript: {fileID: 2500310390231039590}
   swapLensScript: {fileID: 2500310390231039590}
 --- !u!114 &1742710910101886075
 MonoBehaviour:
@@ -2299,7 +2298,7 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: -1611224075776710897, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    m_Reference: {fileID: 0}
   isSprinting: 0
   continuousMoveProviderBase: {fileID: 1994275511581117531}
 --- !u!1 &5692724457719851055

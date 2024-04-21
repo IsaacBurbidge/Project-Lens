@@ -9,8 +9,6 @@ public class CycleLens : MonoBehaviour {
     private InputActionProperty cycleLensButton;
 	[SerializeField]
 	private LensWheelAnimationManager lensWheelAnimationManagerScript;
-	[SerializeField]
-	private SwitchLens switchLensScript;
 
 	// Misc Variables
 	[SerializeField]
@@ -60,5 +58,6 @@ public class CycleLens : MonoBehaviour {
                 swapLensScript.LensWheelSwap(Lens.LensList.REVEAL);
                 break;
         }
+
     }
 }

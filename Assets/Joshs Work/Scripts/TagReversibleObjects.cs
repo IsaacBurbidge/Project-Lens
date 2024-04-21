@@ -33,7 +33,7 @@ public class TagReversibleObjects : MonoBehaviour {
     public List<GameObject> reversibleObjectsList;
     private int objectToRemoveIndex;
     private RaycastHit hit;
-    private int maxSizeOfList = 100; // change laterg
+    private int maxSizeOfList = 100;
     [SerializeField]
     private SwitchLens swapLensScript;
    
@@ -69,6 +69,8 @@ public class TagReversibleObjects : MonoBehaviour {
             hit.transform.gameObject.tag = "Reverse Lens";
             // Changes Color of Parent Object Material back to its Previous Material 
             hit.transform.gameObject.GetComponent<MeshRenderer>().material = previousParentMatList[objectToRemoveIndex];
+            // Revert the Reverse state as it has been untagged
+            hit.transform.gameObject.GetComponent<ReverseLens>().DeactivateLens();
 
             // Check if object has any children
             if (hit.transform.childCount > 0) {
@@ -93,11 +95,11 @@ public class TagReversibleObjects : MonoBehaviour {
                 //    hit.transform.GetComponent<ReverseLens>().ActivateLens();
                 //}
             }
-		} 
+        }
         // The Object cannot be tagged as reversible in the Level so do nothing
         else {
             Debug.Log("This Object is un-able to be tagged as reversible");
-		}
+        }
     }
 
     // Return the Object that the Left Hand Raycast has hit
@@ -119,22 +121,43 @@ public class TagReversibleObjects : MonoBehaviour {
             // Adds the Parent Object to the List
             reversibleObjectsList.Add(hit.transform.parent.gameObject);
             ReverseTagParentLogic();
-        } 
-        // Has children
-        else if( hit.transform.childCount > 0) {
-            // Adds this Object to the List
-            reversibleObjectsList.Add(hit.transform.gameObject);
+            Debug.Log("1");
+		} 
+        // Has children and none of them contains a particle system
+        else if (hit.transform.childCount > 0 && hit.transform.gameObject.GetComponentInChildren<ParticleSystem>() == null) {
+			// Adds this Object to the List
+			reversibleObjectsList.Add(hit.transform.gameObject);
             ReverseTagObjectLogic();
             ChangeChildrensMaterial();
             ChangeChildrensTag();
-        } 
+			Debug.Log("2");
+		}
+        // Doesn't have a parent with a reversible tag
+        else if (hit.transform.parent.gameObject.CompareTag("Reverse Object") == true) {
+            Transform[] childrenArray = null;
+            // Get each child and store them in an array
+            childrenArray = hit.transform.parent.gameObject.GetComponentsInChildren<Transform>();
+
+            // Revert material and tag for every child object
+            foreach (Transform childObj in childrenArray) {
+                childObj.transform.gameObject.GetComponent<MeshRenderer>().material = previousParentMatList[objectToRemoveIndex];
+                childObj.transform.gameObject.tag = "Reverse Lens";
+            }
+			Debug.Log("3");
+		}
         // Doesn't have a parent with a reversible tag and has no children
         else {
             // Adds this Object to the List
             reversibleObjectsList.Add(hit.transform.gameObject);
             ReverseTagObjectLogic();
-        }
-    }
+			Debug.Log("Add pdsaaredsant from child");
+			Debug.Log("Add pdsaaredsant from child 4");
+		}
+        if (swapLensScript.CurrentLens == Lens.LensList.REVERSE) {
+			// Reverse the object if the Reverse Lens is active and this object was just tagged as reversable)
+			hit.transform.gameObject.GetComponent<ReverseLens>().ActivateLens();
+		}
+	}
 
     // Tagged a Child so: Change the material of all the Parents children to the reverse one
     private void ChangeParentChildrensMaterial() {
@@ -176,7 +199,7 @@ public class TagReversibleObjects : MonoBehaviour {
     }
 
 
-    // Reverts all childrens material and tag back to their previous ones once a parent object has been untagged as reversible
+    // Reverts all childrens material and tag back to the   ir previous ones once a parent object has been untagged as reversible
     private void RevertChildrenLogic() {
         Transform[] childrenArray = null;
 
