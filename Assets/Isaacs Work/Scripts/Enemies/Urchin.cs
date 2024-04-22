@@ -41,12 +41,16 @@ public class Urchin : MonoBehaviour {
 	}
 
 	private void OnTriggerEnter(Collider other) {
-		if (MovingToTarget) {
-			Agent.SetDestination(InitialPos);
-			MovingToTarget = false;
+		if(other.tag == "PressurePlate") {
+
 		} else {
-			Agent.SetDestination(TargetPos);
-			MovingToTarget = true;
+			if (MovingToTarget) {
+				Agent.SetDestination(InitialPos);
+				MovingToTarget = false;
+			} else {
+				Agent.SetDestination(TargetPos);
+				MovingToTarget = true;
+			}
 		}
 	}
 }
