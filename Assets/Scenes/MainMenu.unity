@@ -311,7 +311,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2146,7 +2146,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Project Lens
+  m_text: Lens Shift
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 010de2a1639ab884999677198b3a4c9d, type: 2}
   m_sharedMaterial: {fileID: 2338739626905712580, guid: 010de2a1639ab884999677198b3a4c9d, type: 2}
