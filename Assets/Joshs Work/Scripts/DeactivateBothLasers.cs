@@ -19,10 +19,10 @@ public class DeactivateBothLasers : MonoBehaviour {
 		}	
 		// Change Exit Laser Room UI Text based on how many lasers are on
 		if (firstLaserSet.activeInHierarchy == true && secondLaserSet.activeInHierarchy == false || firstLaserSet.activeInHierarchy == false && secondLaserSet.activeInHierarchy == true) {
-			laserRoomExitMessage.GetComponent<UIPromptTextToShow>().uiPromptText = "Have you switched off the rest of the lasers yet?         ¯\\_( ͡° ͜ʖ ͡°)_/¯";
+			laserRoomExitMessage.GetComponent<UIPromptTextToShow>().uiPromptText = "Have you switched off the rest of the lasers yet?";
 		} 
 		else if (firstLaserSet.activeInHierarchy == false && secondLaserSet.activeInHierarchy == false) {
-			laserRoomExitMessage.GetComponent<UIPromptTextToShow>().uiPromptText = "You may pass! ( ͡~ ͜ʖ ͡°)";
+			laserRoomExitMessage.GetComponent<UIPromptTextToShow>().uiPromptText = "You may pass!";
 		}
 	}
 }
