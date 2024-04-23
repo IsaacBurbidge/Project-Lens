@@ -2454,6 +2454,7 @@ GameObject:
   - component: {fileID: 129256405}
   - component: {fileID: 129256404}
   - component: {fileID: 129256403}
+  - component: {fileID: 129256406}
   m_Layer: 12
   m_Name: Cube (3)
   m_TagString: Reveal Lens
@@ -2548,6 +2549,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 129256401}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &129256406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129256401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2db68e9ab2b2b1448c5e9aecd8e1898, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VisibleLens: 0
 --- !u!1 &153812147
 GameObject:
   m_ObjectHideFlags: 0
@@ -20509,6 +20523,7 @@ GameObject:
   - component: {fileID: 1309480838}
   - component: {fileID: 1309480837}
   - component: {fileID: 1309480836}
+  - component: {fileID: 1309480839}
   m_Layer: 12
   m_Name: Cube (2)
   m_TagString: Reveal Lens
@@ -20603,6 +20618,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1309480834}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1309480839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309480834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2db68e9ab2b2b1448c5e9aecd8e1898, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VisibleLens: 0
 --- !u!1 &1310190045 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6829891911653774430, guid: 8b570ea5c8d6da949a6e421b539df27f, type: 3}
@@ -27888,6 +27916,7 @@ GameObject:
   - component: {fileID: 1882129699}
   - component: {fileID: 1882129698}
   - component: {fileID: 1882129697}
+  - component: {fileID: 1882129700}
   m_Layer: 12
   m_Name: Cube
   m_TagString: Reveal Lens
@@ -27982,6 +28011,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1882129694}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1882129700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882129694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2db68e9ab2b2b1448c5e9aecd8e1898, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VisibleLens: 0
 --- !u!1001 &1907231678
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31582,6 +31624,7 @@ GameObject:
   - component: {fileID: 2101713326}
   - component: {fileID: 2101713325}
   - component: {fileID: 2101713324}
+  - component: {fileID: 2101713327}
   m_Layer: 12
   m_Name: Cube (1)
   m_TagString: Reveal Lens
@@ -31676,6 +31719,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2101713321}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2101713327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101713321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2db68e9ab2b2b1448c5e9aecd8e1898, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VisibleLens: 0
 --- !u!1001 &2111260966
 PrefabInstance:
   m_ObjectHideFlags: 0
