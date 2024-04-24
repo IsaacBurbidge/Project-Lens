@@ -10,7 +10,7 @@ public class LeverTriggerAnimation : MonoBehaviour {
 	public bool isDoorOpen = false;
 
 	private void OnTriggerEnter(Collider other) {
-        if (other.gameObject.name == "OpenLevel03DoorHandle_Trigger") {
+        if (other.gameObject.name == "OpenLeverDoorHandle_Trigger") {
 			gameObject.GetComponent<XRGrabInteractable>().enabled = false;
 			Animator.SetBool("isDoorOpen", true);
 		}
