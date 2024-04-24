@@ -1776,7 +1776,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 581167730}
+  m_Mesh: {fileID: 1178438482}
 --- !u!33 &83529592
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -2129,7 +2129,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1040947867}
+  m_Mesh: {fileID: 71879097}
 --- !u!33 &133266318
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -3263,7 +3263,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1714481848}
+  m_Mesh: {fileID: 1243502418}
 --- !u!33 &253708649
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -4511,6 +4511,7 @@ MonoBehaviour:
   triggerTag: Book
   animator: {fileID: 1986725896}
   triggerName: isDoorOpen
+  triggerClip: {fileID: 8300000, guid: 5a1e2da2b12ee4b4cb26ee03c43516bd, type: 3}
 --- !u!23 &350807717
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5145,7 +5146,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1178438482}
+  m_Mesh: {fileID: 791249528}
 --- !u!33 &405450398
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -8520,6 +8521,7 @@ MonoBehaviour:
           m_StringArgument: isDoorOpen
           m_BoolArgument: 0
         m_CallState: 2
+  triggerClip: {fileID: 8300000, guid: 5a1e2da2b12ee4b4cb26ee03c43516bd, type: 3}
 --- !u!1 &611018682 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a4c5f33698f3e1e469ba4904361474c7, type: 3}
@@ -11125,6 +11127,7 @@ MonoBehaviour:
   triggerTag: Player
   animator: {fileID: 1525606466}
   triggerName: isDoorOpen
+  triggerClip: {fileID: 0}
 --- !u!65 &759888613
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12129,7 +12132,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 140218582}
+  m_Mesh: {fileID: 767095267}
 --- !u!33 &781339963
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -13319,7 +13322,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1982450230}
+  m_Mesh: {fileID: 838599884}
 --- !u!33 &848444177
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -16006,7 +16009,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1982450230}
+  m_Mesh: {fileID: 140218582}
 --- !u!33 &994247566
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -17854,7 +17857,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 581167730}
+  m_Mesh: {fileID: 1982450230}
 --- !u!33 &1034440557
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -23201,7 +23204,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 71879097}
+  m_Mesh: {fileID: 1278178173}
 --- !u!33 &1187933493
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -25217,7 +25220,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1243502418}
+  m_Mesh: {fileID: 827126335}
 --- !u!33 &1329135215
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -26258,7 +26261,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 581167730}
+  m_Mesh: {fileID: 1040947867}
 --- !u!33 &1411958731
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -34919,7 +34922,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 581167730}
+  m_Mesh: {fileID: 2035203596}
 --- !u!33 &1859887508
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -35613,7 +35616,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 581167730}
+  m_Mesh: {fileID: 1714481848}
 --- !u!33 &1887209523
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -38678,7 +38681,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1040947867}
+  m_Mesh: {fileID: 914628822}
 --- !u!33 &2011501500
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -40294,15 +40297,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a50f567441893204da1d73d281b9995b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17.285168
+      value: -17.86
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a50f567441893204da1d73d281b9995b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.766
+      value: 3.715
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a50f567441893204da1d73d281b9995b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.143635
+      value: -6.144
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a50f567441893204da1d73d281b9995b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -40372,6 +40375,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 606285345725171392, guid: 0f5b38ca0f6e5ee44b177462d1d4590d, type: 3}
+      propertyPath: aClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 990960821709f70488ff85d217687f83, type: 3}
     - target: {fileID: 1102566403388727904, guid: 0f5b38ca0f6e5ee44b177462d1d4590d, type: 3}
       propertyPath: m_Name
       value: Portal
