@@ -15,6 +15,14 @@ public class SwitchLens : MonoBehaviour {
 	private GameObject reverseImage;
 	[SerializeField]
 	private GameObject noLenseImage;
+	[SerializeField]
+	private GameObject revealWristImage;
+	[SerializeField]
+	private GameObject realityWristImage;
+	[SerializeField]
+	private GameObject reverseWristImage;
+	[SerializeField]
+	private GameObject noLenseWristImage;
 	public Lens.LensList CurrentLens = Lens.LensList.NONE;
 	Lens[] LensItems;
 	[SerializeField]
@@ -37,6 +45,10 @@ public class SwitchLens : MonoBehaviour {
 		realityImage.SetActive(false);
 		reverseImage.SetActive(false);
 		noLenseImage.SetActive(false);
+		revealWristImage.SetActive(true);
+		realityWristImage.SetActive(false);
+		reverseWristImage.SetActive(false);
+		noLenseWristImage.SetActive(false);
 		// Show Reveal Particles and Outlines
 		particleAndOutlineManagerScript.DisplayRevealParticles();
 		particleAndOutlineManagerScript.DisplayRevealOutlines();
@@ -58,6 +70,10 @@ public class SwitchLens : MonoBehaviour {
 		realityImage.SetActive(false);
 		reverseImage.SetActive(true);
 		noLenseImage.SetActive(false);
+		revealWristImage.SetActive(false);
+		realityWristImage.SetActive(false);
+		reverseWristImage.SetActive(true);
+		noLenseWristImage.SetActive(false);
 		// Show Reverse Particles and Outlines
 		particleAndOutlineManagerScript.DisplayReverseParticles();
 		particleAndOutlineManagerScript.DisplayReverseOutlines();
@@ -79,6 +95,10 @@ public class SwitchLens : MonoBehaviour {
 		realityImage.SetActive(true);
 		reverseImage.SetActive(false);
 		noLenseImage.SetActive(false);
+		revealWristImage.SetActive(false);
+		realityWristImage.SetActive(true);
+		reverseWristImage.SetActive(false);
+		noLenseWristImage.SetActive(false);
 		// Show Reality Particles and Outlines
 		particleAndOutlineManagerScript.DisplayRealityParticles();
 		particleAndOutlineManagerScript.DisplayRealityOutlines();
@@ -94,6 +114,10 @@ public class SwitchLens : MonoBehaviour {
 		realityImage.SetActive(false);
 		reverseImage.SetActive(false);
 		noLenseImage.SetActive(true);
+		revealWristImage.SetActive(false);
+		realityWristImage.SetActive(false);
+		reverseWristImage.SetActive(false);
+		noLenseWristImage.SetActive(true);
 		// Hide all Lens Particles and Outlines
 		particleAndOutlineManagerScript.HideRevealParticles();
 		particleAndOutlineManagerScript.HideRevealOutlines();

@@ -20,7 +20,7 @@ public class PlayerHandAnimations : MonoBehaviour {
         // Grip/Fist animation for VR Hands
         float gripValue = grabAnimationAction.action.ReadValue<float>();
         if (grabAnimationAction.action.IsInProgress()) {
-            playerHandAnimator.SetFloat("HandAnimation", 2);
+            playerHandAnimator.SetInteger("HandAnimation", 2);
         }
  
     }
