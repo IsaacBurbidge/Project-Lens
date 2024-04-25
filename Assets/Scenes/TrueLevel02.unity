@@ -416,7 +416,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -1470,7 +1470,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -13767,7 +13767,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -15636,6 +15636,7 @@ MonoBehaviour:
   triggerTag: Book
   animator: {fileID: 1482593963}
   triggerName: isDoorOpen
+  triggerClip: {fileID: 0}
 --- !u!4 &582767317 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0a649fe2126895d4ba2a27e43652c179, type: 3}
@@ -24107,7 +24108,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -40770,6 +40771,7 @@ MonoBehaviour:
   triggerTag: RightHand
   animator: {fileID: 1618185236}
   triggerName: isDoorOpen
+  triggerClip: {fileID: 0}
 --- !u!65 &1466110030
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52542,7 +52544,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -54975,6 +54977,7 @@ MonoBehaviour:
   triggerTag: Ball
   animator: {fileID: 1482593963}
   triggerName: isDoorOpen
+  triggerClip: {fileID: 0}
 --- !u!23 &2102292914
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -57351,6 +57354,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  triggerClip: {fileID: 0}
 --- !u!65 &6442099626291815246
 BoxCollider:
   m_ObjectHideFlags: 0
