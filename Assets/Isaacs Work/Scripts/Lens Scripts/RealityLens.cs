@@ -24,8 +24,8 @@ public class RealityLens : Lens {
 
     private void Start() {
         VisibleLens = LensList.REALITY;
-        Room1 = transform.GetChild(0).gameObject;
-        Room2 = transform.GetChild(1).gameObject;
+        //Room1 = transform.GetChild(0).gameObject;
+        //Room2 = transform.GetChild(1).gameObject;
         //TriggerVolume = transform.GetComponent<Collider>();
     }
 
