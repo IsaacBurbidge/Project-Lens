@@ -4386,7 +4386,7 @@ GameObject:
   - component: {fileID: 129256404}
   - component: {fileID: 129256403}
   - component: {fileID: 129256406}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Reveal Lens
   m_Icon: {fileID: 0}
@@ -35405,7 +35405,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1476818656}
+  m_Mesh: {fileID: 847733833}
 --- !u!33 &922470259
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -46106,7 +46106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5528989802318372071, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.960899
+      value: -1.62
       objectReference: {fileID: 0}
     - target: {fileID: 5528989802318372071, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -51079,7 +51079,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 454763666452929218, guid: 4250789d03a9f8d4f97d847cf363b97b, type: 3}
       propertyPath: m_Layer
-      value: 12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2357174754746630260, guid: 4250789d03a9f8d4f97d847cf363b97b, type: 3}
       propertyPath: m_Speed
@@ -51087,11 +51087,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2375898308512567194, guid: 4250789d03a9f8d4f97d847cf363b97b, type: 3}
       propertyPath: m_Layer
-      value: 12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2770067577661898205, guid: 4250789d03a9f8d4f97d847cf363b97b, type: 3}
       propertyPath: m_Layer
-      value: 12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3825724525389023147, guid: 4250789d03a9f8d4f97d847cf363b97b, type: 3}
       propertyPath: AmountToMove.z
@@ -51103,11 +51103,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5164843579583723104, guid: 4250789d03a9f8d4f97d847cf363b97b, type: 3}
       propertyPath: m_Layer
-      value: 12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5497157024983979799, guid: 4250789d03a9f8d4f97d847cf363b97b, type: 3}
       propertyPath: m_Layer
-      value: 12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5541368676214320346, guid: 4250789d03a9f8d4f97d847cf363b97b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -51151,15 +51151,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6305149250420359055, guid: 4250789d03a9f8d4f97d847cf363b97b, type: 3}
       propertyPath: m_Layer
-      value: 12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6547375250488642952, guid: 4250789d03a9f8d4f97d847cf363b97b, type: 3}
       propertyPath: m_Layer
-      value: 12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7650010528455522123, guid: 4250789d03a9f8d4f97d847cf363b97b, type: 3}
       propertyPath: m_Layer
-      value: 12
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2020768940362639640, guid: 4250789d03a9f8d4f97d847cf363b97b, type: 3}
@@ -52142,7 +52142,7 @@ GameObject:
   - component: {fileID: 1309480837}
   - component: {fileID: 1309480836}
   - component: {fileID: 1309480839}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Reveal Lens
   m_Icon: {fileID: 0}
@@ -52715,7 +52715,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 454763666452929218, guid: 4250789d03a9f8d4f97d847cf363b97b, type: 3}
       propertyPath: m_Layer
-      value: 12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2357174754746630260, guid: 4250789d03a9f8d4f97d847cf363b97b, type: 3}
       propertyPath: m_Speed
@@ -52723,11 +52723,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2375898308512567194, guid: 4250789d03a9f8d4f97d847cf363b97b, type: 3}
       propertyPath: m_Layer
-      value: 12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2770067577661898205, guid: 4250789d03a9f8d4f97d847cf363b97b, type: 3}
       propertyPath: m_Layer
-      value: 12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3825724525389023147, guid: 4250789d03a9f8d4f97d847cf363b97b, type: 3}
       propertyPath: AmountToMove.z
@@ -52739,11 +52739,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5164843579583723104, guid: 4250789d03a9f8d4f97d847cf363b97b, type: 3}
       propertyPath: m_Layer
-      value: 12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5497157024983979799, guid: 4250789d03a9f8d4f97d847cf363b97b, type: 3}
       propertyPath: m_Layer
-      value: 12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5541368676214320346, guid: 4250789d03a9f8d4f97d847cf363b97b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -52787,15 +52787,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6305149250420359055, guid: 4250789d03a9f8d4f97d847cf363b97b, type: 3}
       propertyPath: m_Layer
-      value: 12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6547375250488642952, guid: 4250789d03a9f8d4f97d847cf363b97b, type: 3}
       propertyPath: m_Layer
-      value: 12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7650010528455522123, guid: 4250789d03a9f8d4f97d847cf363b97b, type: 3}
       propertyPath: m_Layer
-      value: 12
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2020768940362639640, guid: 4250789d03a9f8d4f97d847cf363b97b, type: 3}
@@ -69127,7 +69127,7 @@ GameObject:
   - component: {fileID: 1882129698}
   - component: {fileID: 1882129697}
   - component: {fileID: 1882129700}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Cube
   m_TagString: Reveal Lens
   m_Icon: {fileID: 0}
@@ -77503,7 +77503,7 @@ GameObject:
   - component: {fileID: 2101713325}
   - component: {fileID: 2101713324}
   - component: {fileID: 2101713327}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Reveal Lens
   m_Icon: {fileID: 0}
