@@ -6,7 +6,10 @@ public class RevealLens : Lens {
 	MeshRenderer Mesh;
 	Rigidbody Rigidbody;
 	Collider Collider;
+	[SerializeField]
+	Collider ChildCollider;
 
+	public bool IsLevel3Door = false;
 	private void Start() {
 		VisibleLens = LensList.REVEAL;
 		Mesh = GetComponent<MeshRenderer>();
@@ -29,6 +32,9 @@ public class RevealLens : Lens {
 		if (Rigidbody != null) {
 			Rigidbody.WakeUp();
 		}
+		if(ChildCollider != null) {
+			ChildCollider.enabled = true;
+		}
 	}
 
 	public override void DeactivateLens() {
@@ -38,6 +44,9 @@ public class RevealLens : Lens {
 		}
 		if (Rigidbody != null) {
 			Rigidbody.Sleep();
+		}
+		if (ChildCollider != null) {
+			ChildCollider.enabled = false;
 		}
 	}
 }
