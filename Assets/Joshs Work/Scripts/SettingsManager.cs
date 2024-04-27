@@ -42,11 +42,9 @@ public class SettingsManager : MonoBehaviour {
 			PlayerPrefs.SetFloat("LensTintIntensity", 0.35f);
 			lensTintIntensityDropdown.value = (int)0.35f;
 			SetTintIntensity();
-			Debug.Log("NO PREV TINT SET");
 		}
 		else {
 			GetTintIntensity();
-			Debug.Log("GET PREV TINT SET");
 		}
 	}
 
