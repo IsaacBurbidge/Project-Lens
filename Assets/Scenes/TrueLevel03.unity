@@ -1215,32 +1215,6 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
---- !u!1 &31310523 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 502985247663453918, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
-  m_PrefabInstance: {fileID: 1178059424}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &31310526
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 31310523}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.083225764, y: 0.11919097, z: 0.2396584}
-  m_Center: {x: 0.041875083, y: 0.030944321, z: 0.027374431}
 --- !u!43 &31953809
 Mesh:
   m_ObjectHideFlags: 0
@@ -24609,7 +24583,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -46106,7 +46080,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5528989802318372071, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.62
+      value: -11.960899
       objectReference: {fileID: 0}
     - target: {fileID: 5528989802318372071, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -46420,9 +46394,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 502985247663453918, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 31310526}
     - targetCorrespondingSourceObject: {fileID: 4949809842327581357, guid: e4b8ed581a8daef45a8c75422e52d7c5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2054110576}
