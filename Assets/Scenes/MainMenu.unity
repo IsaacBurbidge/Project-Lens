@@ -1916,7 +1916,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2133,8 +2133,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allAudioClipArray: []
-  volumeSlider: {fileID: 0}
-  volumeValueText: {fileID: 0}
+  volumeSlider: {fileID: 575852230}
+  volumeValueText: {fileID: 651665644}
   lensTintIntensityDropdown: {fileID: 311469919}
   lensTintImage: {fileID: 617541748}
 --- !u!1 &89313649
@@ -39167,6 +39167,79 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1451523153}
   m_CullTransparentMesh: 1
+--- !u!1001 &1464808008
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4595207722110553356, guid: c004955b47ae0d14fa1ad1c308ed26c2, type: 3}
+      propertyPath: m_Name
+      value: pc-monitor
+      objectReference: {fileID: 0}
+    - target: {fileID: 9122568891875285693, guid: c004955b47ae0d14fa1ad1c308ed26c2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6249715
+      objectReference: {fileID: 0}
+    - target: {fileID: 9122568891875285693, guid: c004955b47ae0d14fa1ad1c308ed26c2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 54.17927
+      objectReference: {fileID: 0}
+    - target: {fileID: 9122568891875285693, guid: c004955b47ae0d14fa1ad1c308ed26c2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 62.978096
+      objectReference: {fileID: 0}
+    - target: {fileID: 9122568891875285693, guid: c004955b47ae0d14fa1ad1c308ed26c2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0596
+      objectReference: {fileID: 0}
+    - target: {fileID: 9122568891875285693, guid: c004955b47ae0d14fa1ad1c308ed26c2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -17.7308
+      objectReference: {fileID: 0}
+    - target: {fileID: 9122568891875285693, guid: c004955b47ae0d14fa1ad1c308ed26c2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 25.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9122568891875285693, guid: c004955b47ae0d14fa1ad1c308ed26c2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9122568891875285693, guid: c004955b47ae0d14fa1ad1c308ed26c2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9122568891875285693, guid: c004955b47ae0d14fa1ad1c308ed26c2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9122568891875285693, guid: c004955b47ae0d14fa1ad1c308ed26c2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9122568891875285693, guid: c004955b47ae0d14fa1ad1c308ed26c2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 9122568891875285693, guid: c004955b47ae0d14fa1ad1c308ed26c2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9122568891875285693, guid: c004955b47ae0d14fa1ad1c308ed26c2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 9122568891875285693, guid: c004955b47ae0d14fa1ad1c308ed26c2, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c004955b47ae0d14fa1ad1c308ed26c2, type: 3}
 --- !u!1001 &1473783988
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43925,8 +43998,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allAudioClipArray: []
-  volumeSlider: {fileID: 0}
-  volumeValueText: {fileID: 0}
+  volumeSlider: {fileID: 575852230}
+  volumeValueText: {fileID: 651665644}
   lensTintIntensityDropdown: {fileID: 311469919}
   lensTintImage: {fileID: 2131784907}
 --- !u!1001 &1651533637
@@ -56659,7 +56732,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2487137376031765916, guid: 348291e5ba73c8946bac4045fa3108ac, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3534158689385824515, guid: 348291e5ba73c8946bac4045fa3108ac, type: 3}
       propertyPath: m_LocalScale.x
@@ -56811,6 +56884,7 @@ SceneRoots:
   - {fileID: 30638411}
   - {fileID: 1182011538}
   - {fileID: 1321577843}
+  - {fileID: 1464808008}
   - {fileID: 2135783490}
   - {fileID: 1484275918}
   - {fileID: 682293886}
