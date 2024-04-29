@@ -10,6 +10,8 @@ public class PauseGame : MonoBehaviour {
 	[SerializeField]
     private GameObject pauseMenuParent;
 	[SerializeField]
+	private GameObject pauseMenuOverlay;
+	[SerializeField]
 	private DynamicMoveProvider dynamicMoveProvider;
 
     // Update is called once per frame
@@ -20,6 +22,7 @@ public class PauseGame : MonoBehaviour {
 	}
     private void Pause() {
 		pauseMenuParent.SetActive(true);
+		pauseMenuOverlay.SetActive(true);
 		dynamicMoveProvider.enabled = false;
 	}
 	// Called on Pause Menu Resume Button Press
