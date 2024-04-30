@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+// Jump was taken out of the game due to feedback received
 public class PlayerJump : MonoBehaviour {
 	// Player
 	private Vector3 verticalVelocity;

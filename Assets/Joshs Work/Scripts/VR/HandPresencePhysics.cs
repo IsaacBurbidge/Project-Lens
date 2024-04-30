@@ -9,7 +9,6 @@ public class HandPresencePhysics : MonoBehaviour {
     private Rigidbody rb;
     private Collider[] handColliders;
 
-    // Start is called before the first frame update
     void Start() {
         rb = GetComponent<Rigidbody>();
         handColliders = GetComponentsInChildren<Collider>();

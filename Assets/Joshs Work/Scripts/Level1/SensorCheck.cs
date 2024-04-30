@@ -10,6 +10,7 @@ public class SensorCheck : MonoBehaviour {
     private GameObject leverHandleObj;
 
 	public void CheckSensors() {
+        // Checks if all 3 sensors are lit up and if so, drops the lever hand piece
         SensorCheck[] sensorsArray = FindObjectsOfType<SensorCheck>();
         foreach (SensorCheck sensor in sensorsArray) { 
             if(sensor.isSensorLit == true) {

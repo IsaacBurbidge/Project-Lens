@@ -14,11 +14,6 @@ public class CycleLens : MonoBehaviour {
 	[SerializeField]
     private SwitchLens swapLensScript;
 
-    // Start is called before the first frame update
-    void Start() {
-
-    }
-
     // Update is called once per frame
     void Update() {
         if (cycleLensButton.action.WasPressedThisFrame() == true) {

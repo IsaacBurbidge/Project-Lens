@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
 
+// Sprint was taken out of the game due to feedback received
 public class PlayerSprint : MonoBehaviour {
     // Player Input
     [SerializeField]

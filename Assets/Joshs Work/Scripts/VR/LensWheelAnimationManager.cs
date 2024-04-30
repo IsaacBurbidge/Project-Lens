@@ -9,6 +9,7 @@ public class LensWheelAnimationManager : MonoBehaviour {
 	[SerializeField]
 	private Animator Animator;
 
+	// Handles the Lens Wheel Animations upon interaction
 	public void PlayLensWheelAnimation() {
 		switch (switchLensScript.CurrentLens) {
 			// Check what the previous current lens was

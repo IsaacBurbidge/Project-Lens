@@ -50,13 +50,6 @@ public class MainMenuManager : MonoBehaviour {
 		mainMenuParent.SetActive(true);
 	}
 
-	// Settings Menu Buttons:
-
-	// TBD
-	public void TBDButtonClicked() {
-		// TBD
-	}
-
 	// Returns to the Main Menu from the Settings Menu
 	public void SettingsBackButtonClicked() {
 		settingsMenuParent.SetActive(false);

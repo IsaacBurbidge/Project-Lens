@@ -12,6 +12,7 @@ public class LeverFix : MonoBehaviour {
 	public bool HasLeverHandle = false;
 
 	private void OnTriggerEnter(Collider other) {
+		// Play the Animation of fixing the lever
 		if (HasLeverHandle == false && other.gameObject.CompareTag("Lever")) {
 			HasLeverHandle = true;
 			Destroy(LeverInHandObject);

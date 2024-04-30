@@ -14,13 +14,13 @@ public class PauseGame : MonoBehaviour {
 	[SerializeField]
 	private DynamicMoveProvider dynamicMoveProvider;
 
-    // Update is called once per frame
     void Update() {
 		if (pauseGameButton.action.WasPressedThisFrame() == true) {
 			Pause();
 		}
 	}
-    private void Pause() {
+	// Display Pause Menu when the pause button is pressed on the VR Controller
+	private void Pause() {
 		pauseMenuParent.SetActive(true);
 		pauseMenuOverlay.SetActive(true);
 		dynamicMoveProvider.enabled = false;

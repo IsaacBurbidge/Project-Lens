@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Displays Particles and Outlines when a particular Lens is activated
 public class ParticleAndOutlineManager : MonoBehaviour {
 	[Header("Lens Particle Lists:")]
 	public List<GameObject> revealParticlesList;

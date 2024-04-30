@@ -6,16 +6,6 @@ using UnityEngine;
 public class UIPromptTriggers : MonoBehaviour {
     public List<GameObject> uiPromptTriggers;
 
-    // Start is called before the first frame update
-    void Start() {
-
-    }
-
-    // Update is called once per frame
-    void Update() {
-
-    }
-
     // When Player Enters a trigger, it checks the objects prompt text and displays it in world space
     private void OnTriggerStay(Collider other) {
         if (other.gameObject.CompareTag("UIPrompt")) {

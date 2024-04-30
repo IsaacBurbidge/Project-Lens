@@ -9,7 +9,6 @@ public class PlayerHandAnimations : MonoBehaviour {
     [SerializeField]
     private Animator playerHandAnimator;
 
-    // Update is called once per frame
     void Update() {
         // Point animation for VR Hands
         float triggerValue = pointAnimationAction.action.ReadValue<float>();

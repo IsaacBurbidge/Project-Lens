@@ -16,9 +16,9 @@ public class FuseTriggerAnimation : MonoBehaviour {
 	private GameObject middleFuseUIPromptObject;
 	[SerializeField]
 	private GameObject otherFuseObject;
+
 	private void Start () {
 		isFirstDoorOpen = false;
-
 	}
 	private void OnTriggerStay(Collider other) {
 		if (isFirstDoorOpen == false && other.gameObject.name == "LeftFuse_Trigger" || isFirstDoorOpen == false && other.gameObject.name == "MiddleFuse_Trigger") {

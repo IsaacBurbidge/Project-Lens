@@ -12,6 +12,8 @@ public class LaserButtonUIPrompt : Lens {
 	void Start() {
         VisibleLens = LensList.REVEAL;
     }
+	// Display a UI Prompt to turn off the lasers if the Player has the Reveal lens currently activated
+	// and they are within the proximity of the UI text trigger
 	private void OnTriggerEnter(Collider other) {
 		if(other.gameObject.name == "Player") { 			
             if(switchLensScript.CurrentLens == LensList.REVEAL) {
