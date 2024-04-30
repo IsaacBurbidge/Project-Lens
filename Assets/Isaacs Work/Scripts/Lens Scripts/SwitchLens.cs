@@ -153,11 +153,9 @@ public class SwitchLens : MonoBehaviour {
 		for (int i = 0; i < LensItems.Length; i++) {
 			if (CurrentLens == LensItems[i].VisibleLens) {
 				LensItems[i].ActivateLens();
-				Debug.Log("REVERSE NOW");
 			}
 			else if ((int)PreviousLens == (int)LensItems[i].VisibleLens) {
 				LensItems[i].DeactivateLens();
-				Debug.Log("UNREVERSE NOW");
 			}
 		}
 	}

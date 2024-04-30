@@ -37,10 +37,6 @@ public class TagReversibleObjects : MonoBehaviour {
     [SerializeField]
     private SwitchLens swapLensScript;
    
-    // Start is called before the first frame update
-    void Start() {
-        
-    }
 
     // Update is called once per frame
     void Update() {
@@ -84,21 +80,16 @@ public class TagReversibleObjects : MonoBehaviour {
         else if (reversibleObjectsList.Contains(hit.transform.gameObject) == false && hit.transform.CompareTag("Reverse Lens") == true) {
             // Check if the List has reached max capacity
             if (reversibleObjectsList.Count == maxSizeOfList) {
-                // Display Error Message: Must remove an object from being reversible | Max is only 3
-                Debug.Log("Max Objects that can be Reversible are 3. Please remove an object from being reversible");
+                // Display Error Message: Must remove an object from being reversible
             }
             // Check if the List hasn't reached max capacity
             else if (reversibleObjectsList.Count < maxSizeOfList) {
                 TagObject();
-
-                //if (GetComponent<SwitchLens>() != null && GetComponent<SwitchLens>().CurrentLens == Lens.LensList.REVERSE) {
-                //    hit.transform.GetComponent<ReverseLens>().ActivateLens();
-                //}
             }
         }
         // The Object cannot be tagged as reversible in the Level so do nothing
         else {
-            Debug.Log("This Object is un-able to be tagged as reversible");
+            // Do Nothing
         }
     }
 
@@ -121,7 +112,6 @@ public class TagReversibleObjects : MonoBehaviour {
             // Adds the Parent Object to the List
             reversibleObjectsList.Add(hit.transform.parent.gameObject);
             ReverseTagParentLogic();
-            Debug.Log("1");
 		} 
         // Has children and none of them contains a particle system
         else if (hit.transform.childCount > 0 && hit.transform.gameObject.GetComponentInChildren<ParticleSystem>() == null) {
@@ -130,7 +120,6 @@ public class TagReversibleObjects : MonoBehaviour {
             ReverseTagObjectLogic();
             ChangeChildrensMaterial();
             ChangeChildrensTag();
-			Debug.Log("2");
 		}
         // Doesn't have a parent with a reversible tag
         else if (hit.transform.parent.gameObject.CompareTag("Reverse Object") == true) {
@@ -143,15 +132,12 @@ public class TagReversibleObjects : MonoBehaviour {
                 childObj.transform.gameObject.GetComponent<MeshRenderer>().material = previousParentMatList[objectToRemoveIndex];
                 childObj.transform.gameObject.tag = "Reverse Lens";
             }
-			Debug.Log("3");
 		}
         // Doesn't have a parent with a reversible tag and has no children
         else {
             // Adds this Object to the List
             reversibleObjectsList.Add(hit.transform.gameObject);
             ReverseTagObjectLogic();
-			Debug.Log("Add pdsaaredsant from child");
-			Debug.Log("Add pdsaaredsant from child 4");
 		}
         if (swapLensScript.CurrentLens == Lens.LensList.REVERSE) {
 			// Reverse the object if the Reverse Lens is active and this object was just tagged as reversable)

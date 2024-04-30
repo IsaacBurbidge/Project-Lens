@@ -55,7 +55,4 @@ public class FuseTriggerAnimation : MonoBehaviour {
 			gameObject.SetActive(false);
 		}
 	}
-	private void Update() {
-		Debug.Log(isFirstDoorOpen);
-	}
 }

@@ -12,7 +12,6 @@ public class TargetHit : MonoBehaviour {
 
 	private void OnTriggerEnter(Collider other) {
 		if (other.CompareTag("Ball")) {
-			Debug.Log("Triggered");
 			lightMeshRenderer.material = successMaterial;
 			AudioSource.PlayClipAtPoint(hitClip, transform.position);
 		}
